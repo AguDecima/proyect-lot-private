@@ -271,6 +271,9 @@ Partial Class frmServicios
         '
         Me.DGListaServicios.AllowUserToAddRows = False
         Me.DGListaServicios.AllowUserToDeleteRows = False
+        Me.DGListaServicios.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DGListaServicios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGListaServicios.Location = New System.Drawing.Point(6, 39)
         Me.DGListaServicios.Name = "DGListaServicios"
@@ -303,6 +306,7 @@ Partial Class frmServicios
         Me.ClientSize = New System.Drawing.Size(448, 312)
         Me.Controls.Add(Me.TabServicios)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "frmServicios"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Servicios"

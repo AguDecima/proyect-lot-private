@@ -48,6 +48,9 @@ Partial Class frmLotePrivado
         '
         'TabLotePrivado
         '
+        Me.TabLotePrivado.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TabLotePrivado.Controls.Add(Me.TabPage1)
         Me.TabLotePrivado.Controls.Add(Me.TabPage2)
         Me.TabLotePrivado.Location = New System.Drawing.Point(13, 13)
@@ -190,6 +193,9 @@ Partial Class frmLotePrivado
         '
         Me.DGListaLotesPrivados.AllowUserToAddRows = False
         Me.DGListaLotesPrivados.AllowUserToDeleteRows = False
+        Me.DGListaLotesPrivados.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DGListaLotesPrivados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGListaLotesPrivados.Location = New System.Drawing.Point(7, 33)
         Me.DGListaLotesPrivados.Name = "DGListaLotesPrivados"
@@ -221,6 +227,7 @@ Partial Class frmLotePrivado
         Me.ClientSize = New System.Drawing.Size(382, 204)
         Me.Controls.Add(Me.TabLotePrivado)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "frmLotePrivado"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Lotes Privados"

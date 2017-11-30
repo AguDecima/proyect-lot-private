@@ -54,9 +54,12 @@ Partial Class frmReservas
         '
         'TabReservas
         '
+        Me.TabReservas.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TabReservas.Controls.Add(Me.TabPage1)
         Me.TabReservas.Controls.Add(Me.TabPage2)
-        Me.TabReservas.Location = New System.Drawing.Point(12, 8)
+        Me.TabReservas.Location = New System.Drawing.Point(12, 12)
         Me.TabReservas.Name = "TabReservas"
         Me.TabReservas.SelectedIndex = 0
         Me.TabReservas.Size = New System.Drawing.Size(370, 253)
@@ -252,6 +255,9 @@ Partial Class frmReservas
         '
         Me.DGListaReservas.AllowUserToAddRows = False
         Me.DGListaReservas.AllowUserToDeleteRows = False
+        Me.DGListaReservas.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DGListaReservas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGListaReservas.Location = New System.Drawing.Point(6, 33)
         Me.DGListaReservas.Name = "DGListaReservas"
@@ -283,6 +289,7 @@ Partial Class frmReservas
         Me.ClientSize = New System.Drawing.Size(394, 283)
         Me.Controls.Add(Me.TabReservas)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "frmReservas"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Reservas"

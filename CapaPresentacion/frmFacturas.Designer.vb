@@ -64,6 +64,9 @@ Partial Class frmFacturas
         '
         'TabFacturas
         '
+        Me.TabFacturas.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TabFacturas.Controls.Add(Me.TabPage1)
         Me.TabFacturas.Controls.Add(Me.TabPage2)
         Me.TabFacturas.Location = New System.Drawing.Point(13, 13)
@@ -362,6 +365,9 @@ Partial Class frmFacturas
         '
         Me.DGListaFacturas.AllowUserToAddRows = False
         Me.DGListaFacturas.AllowUserToDeleteRows = False
+        Me.DGListaFacturas.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DGListaFacturas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGListaFacturas.Location = New System.Drawing.Point(6, 42)
         Me.DGListaFacturas.Name = "DGListaFacturas"

@@ -72,6 +72,9 @@ Partial Class frmPersonas
         '
         'TabPersonas
         '
+        Me.TabPersonas.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TabPersonas.Controls.Add(Me.TabPage1)
         Me.TabPersonas.Controls.Add(Me.TabPage2)
         Me.TabPersonas.Controls.Add(Me.TabPage3)
@@ -326,6 +329,9 @@ Partial Class frmPersonas
         '
         Me.ListaHabitantes.AllowUserToAddRows = False
         Me.ListaHabitantes.AllowUserToDeleteRows = False
+        Me.ListaHabitantes.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ListaHabitantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ListaHabitantes.Location = New System.Drawing.Point(7, 33)
         Me.ListaHabitantes.Name = "ListaHabitantes"
@@ -345,7 +351,7 @@ Partial Class frmPersonas
         'txtBuscarHabitantes
         '
         Me.txtBuscarHabitantes.Location = New System.Drawing.Point(7, 7)
-        Me.txtBuscarHabitantes.MaxLength = 1
+        Me.txtBuscarHabitantes.MaxLength = 5
         Me.txtBuscarHabitantes.Name = "txtBuscarHabitantes"
         Me.txtBuscarHabitantes.Size = New System.Drawing.Size(191, 20)
         Me.txtBuscarHabitantes.TabIndex = 0
@@ -376,6 +382,9 @@ Partial Class frmPersonas
         '
         Me.ListaPropietarios.AllowUserToAddRows = False
         Me.ListaPropietarios.AllowUserToDeleteRows = False
+        Me.ListaPropietarios.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ListaPropietarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ListaPropietarios.Location = New System.Drawing.Point(4, 39)
         Me.ListaPropietarios.Name = "ListaPropietarios"
@@ -394,10 +403,10 @@ Partial Class frmPersonas
         '
         'txtBuscarPropietarios
         '
-        Me.txtBuscarPropietarios.Location = New System.Drawing.Point(3, 9)
+        Me.txtBuscarPropietarios.Location = New System.Drawing.Point(4, 11)
         Me.txtBuscarPropietarios.MaxLength = 5
         Me.txtBuscarPropietarios.Name = "txtBuscarPropietarios"
-        Me.txtBuscarPropietarios.Size = New System.Drawing.Size(182, 20)
+        Me.txtBuscarPropietarios.Size = New System.Drawing.Size(191, 20)
         Me.txtBuscarPropietarios.TabIndex = 14
         '
         'TabPage4
@@ -416,6 +425,9 @@ Partial Class frmPersonas
         '
         Me.HabitantesLotes.AllowUserToAddRows = False
         Me.HabitantesLotes.AllowUserToDeleteRows = False
+        Me.HabitantesLotes.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.HabitantesLotes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.HabitantesLotes.Location = New System.Drawing.Point(9, 36)
         Me.HabitantesLotes.Name = "HabitantesLotes"
@@ -447,6 +459,7 @@ Partial Class frmPersonas
         Me.ClientSize = New System.Drawing.Size(401, 326)
         Me.Controls.Add(Me.TabPersonas)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "frmPersonas"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Personas"

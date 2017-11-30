@@ -10,18 +10,30 @@
     Dim condicion As Boolean
 
     Private Sub btnCalcularPrecioAlquiler_Click(sender As Object, e As EventArgs) Handles btnCalcularPrecioAlquiler.Click
+
+        If IsNumeric(txtIdPersona.Text) = False Then
+            MsgBox("Falta el numero de persona")
+            Exit Sub
+        End If
+
         nroPersona = CInt(txtIdPersona.Text)
 
-        Dim DPersona As New CapaDatos.DPersonas()
-        DPersona.IdPersona = nroPersona
-        Dim NFacturas As New CapaNegocio.NFacturas()
+            Dim DPersona As New CapaDatos.DPersonas()
+            DPersona.IdPersona = nroPersona
+            Dim NFacturas As New CapaNegocio.NFacturas()
 
-        txtPrecioAlquiler.Text = NFacturas.PrecioAlquiler(DPersona)
-        txtPrecioAlquiler.Enabled = False
+            txtPrecioAlquiler.Text = NFacturas.PrecioAlquiler(DPersona)
+            txtPrecioAlquiler.Enabled = False
 
     End Sub
 
     Private Sub btnCalcularExpensas_Click(sender As Object, e As EventArgs) Handles btnCalcularExpensas.Click
+
+        If IsNumeric(txtIdPersona.Text) = False Then
+            MsgBox("Falta el numero de persona")
+            Exit Sub
+        End If
+
         nroPersona = CInt(txtIdPersona.Text)
         fechaContratacion = CDate(DTFechaFactura.Text)
         Dim DServicios As New CapaDatos.DServicios()
@@ -33,6 +45,12 @@
     End Sub
 
     Private Sub btnVerificar_Click(sender As Object, e As EventArgs) Handles btnVerificar.Click
+
+        If IsNumeric(txtIdPersona.Text) = False Then
+            MsgBox("Falta el numero de persona")
+            Exit Sub
+        End If
+
         nroPersona = CInt(txtIdPersona.Text)
         Dim verifica As Integer
         Dim DPersona As New CapaDatos.DPersonas
@@ -43,11 +61,18 @@
 
         If verifica <> 0 Then
             lblBonificacion.Text = "APLICA"
+        Else
+            lblBonificacion.Text = "NO APLICA"
         End If
 
     End Sub
 
     Private Sub btnCalcularTotal_Click(sender As Object, e As EventArgs) Handles btnCalcularTotal.Click
+
+        If IsNumeric(txtPrecioAlquiler.Text) = False Or IsNumeric(txtPrecioExpensas.Text) = False Then
+            MsgBox("Falta calcular el precio de la expensa o del alquiler ")
+            Exit Sub
+        End If
 
         precioExpensa = CDbl(txtPrecioExpensas.Text)
         precioAlquiler = CDbl(txtPrecioAlquiler.Text)

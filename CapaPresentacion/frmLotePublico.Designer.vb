@@ -48,6 +48,9 @@ Partial Class frmLotePublico
         '
         'TabLotePublico
         '
+        Me.TabLotePublico.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TabLotePublico.Controls.Add(Me.TabPage1)
         Me.TabLotePublico.Controls.Add(Me.TabPage2)
         Me.TabLotePublico.Location = New System.Drawing.Point(12, 12)
@@ -192,6 +195,9 @@ Partial Class frmLotePublico
         '
         Me.DGListaLotesPublicos.AllowUserToAddRows = False
         Me.DGListaLotesPublicos.AllowUserToDeleteRows = False
+        Me.DGListaLotesPublicos.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DGListaLotesPublicos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGListaLotesPublicos.Location = New System.Drawing.Point(7, 33)
         Me.DGListaLotesPublicos.Name = "DGListaLotesPublicos"
@@ -223,6 +229,7 @@ Partial Class frmLotePublico
         Me.ClientSize = New System.Drawing.Size(383, 224)
         Me.Controls.Add(Me.TabLotePublico)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "frmLotePublico"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Lotes Publicos"
