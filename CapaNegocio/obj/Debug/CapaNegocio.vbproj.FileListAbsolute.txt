@@ -27,3 +27,17 @@ F:\Taller de Lenguaje II\Trabajo Final\Aplicacion\Barrio Privado\CapaNegocio\bin
 F:\Taller de Lenguaje II\Trabajo Final\Aplicacion\Barrio Privado\CapaNegocio\bin\Debug\MySql.Data.xml
 H:\Taller de Lenguaje II\Trabajo Final\Aplicacion\Barrio Privado\CapaNegocio\bin\Debug\MySql.Data.dll
 H:\Taller de Lenguaje II\Trabajo Final\Aplicacion\Barrio Privado\CapaNegocio\bin\Debug\MySql.Data.xml
+F:\Taller de Lenguaje II\Trabajo Final\app con git\Barrio Privado\CapaNegocio\bin\Debug\CapaNegocio.dll
+F:\Taller de Lenguaje II\Trabajo Final\app con git\Barrio Privado\CapaNegocio\bin\Debug\CapaNegocio.pdb
+F:\Taller de Lenguaje II\Trabajo Final\app con git\Barrio Privado\CapaNegocio\bin\Debug\CapaNegocio.xml
+F:\Taller de Lenguaje II\Trabajo Final\app con git\Barrio Privado\CapaNegocio\bin\Debug\CapaDatos.dll
+F:\Taller de Lenguaje II\Trabajo Final\app con git\Barrio Privado\CapaNegocio\bin\Debug\MySql.Data.dll
+F:\Taller de Lenguaje II\Trabajo Final\app con git\Barrio Privado\CapaNegocio\bin\Debug\CapaDatos.pdb
+F:\Taller de Lenguaje II\Trabajo Final\app con git\Barrio Privado\CapaNegocio\bin\Debug\CapaDatos.xml
+F:\Taller de Lenguaje II\Trabajo Final\app con git\Barrio Privado\CapaNegocio\bin\Debug\MySql.Data.xml
+F:\Taller de Lenguaje II\Trabajo Final\app con git\Barrio Privado\CapaNegocio\obj\Debug\CapaNegocio.vbprojResolveAssemblyReference.cache
+F:\Taller de Lenguaje II\Trabajo Final\app con git\Barrio Privado\CapaNegocio\obj\Debug\CapaNegocio.Resources.resources
+F:\Taller de Lenguaje II\Trabajo Final\app con git\Barrio Privado\CapaNegocio\obj\Debug\CapaNegocio.vbproj.GenerateResource.Cache
+F:\Taller de Lenguaje II\Trabajo Final\app con git\Barrio Privado\CapaNegocio\obj\Debug\CapaNegocio.dll
+F:\Taller de Lenguaje II\Trabajo Final\app con git\Barrio Privado\CapaNegocio\obj\Debug\CapaNegocio.xml
+F:\Taller de Lenguaje II\Trabajo Final\app con git\Barrio Privado\CapaNegocio\obj\Debug\CapaNegocio.pdb

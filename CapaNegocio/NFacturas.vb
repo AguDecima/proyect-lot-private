@@ -5,13 +5,18 @@ Public Class NFacturas
         Dim cn As New Conexion
         Dim total As Double
         cn.conectar()
-        Dim consulta = "SELECT SUM(monto) As total FROM servicio WHERE fecha_contratacion = @fecha"
+        Dim consulta = "SELECT SUM(monto) As total FROM servicio WHERE fecha_contratacion = @fecha AND id_persona = @id"
 
-        Dim comando As New MySqlCommand(consulta, cn.MySqlConexion)
-        comando.Parameters.AddWithValue("@fecha", servicio.FechaContratacion)
-        total = comando.ExecuteScalar()
+        Try
+            Dim comando As New MySqlCommand(consulta, cn.MySqlConexion)
+            comando.Parameters.AddWithValue("@id", servicio.IdPersona)
+            comando.Parameters.AddWithValue("@fecha", servicio.FechaContratacion)
+            total = comando.ExecuteScalar()
 
-        Return total
+            Return total
+        Catch ex As Exception
+            Return 0
+        End Try
 
     End Function
 
@@ -21,13 +26,18 @@ Public Class NFacturas
         Dim precioLote As Double
         cn.conectar()
 
-        Dim loteHabitante = "SELECT precio_alquiler FROM lote_privado WHERE id_lote_privado IN " +
+        Try
+            Dim loteHabitante = "SELECT precio_alquiler FROM lote_privado WHERE id_lote_privado IN " +
             " (SELECT id_lote_privado FROM personas WHERE id_persona = @id_persona AND is_propietario <> 1)"
-        Dim comando As New MySqlCommand(loteHabitante, cn.MySqlConexion)
-        comando.Parameters.AddWithValue("@id_persona", persona.IdPersona)
-        precioLote = comando.ExecuteScalar()
+            Dim comando As New MySqlCommand(loteHabitante, cn.MySqlConexion)
+            comando.Parameters.AddWithValue("@id_persona", persona.IdPersona)
+            precioLote = comando.ExecuteScalar()
 
-        Return precioLote
+            Return precioLote
+        Catch ex As Exception
+            Return 0
+        End Try
+
 
     End Function
 
@@ -37,12 +47,17 @@ Public Class NFacturas
         Dim idPersona As Integer
         cn.conectar()
 
-        Dim bonificacion = "SELECT id_persona FROM reserva WHERE id_persona = @id_persona"
-        Dim comando As New MySqlCommand(bonificacion, cn.MySqlConexion)
-        comando.Parameters.AddWithValue("@id_persona", persona.IdPersona)
-        idPersona = comando.ExecuteScalar()
+        Try
+            Dim bonificacion = "SELECT id_persona FROM reserva WHERE id_persona = @id_persona"
+            Dim comando As New MySqlCommand(bonificacion, cn.MySqlConexion)
+            comando.Parameters.AddWithValue("@id_persona", persona.IdPersona)
+            idPersona = comando.ExecuteScalar()
 
-        Return idPersona
+            Return idPersona
+        Catch ex As Exception
+            Return MsgBox(ex.Message)
+        End Try
+
     End Function
 
     'calculo del total que debe pagar
@@ -141,7 +156,10 @@ Public Class NFacturas
         dataAdapter.Fill(dataTable)
 
         Return dataTable
+
+
     End Function
+
     'metodo para buscar una factura por su numero
     Public Function findById(factura As CapaDatos.DFacturas)
         Dim cn As New Conexion

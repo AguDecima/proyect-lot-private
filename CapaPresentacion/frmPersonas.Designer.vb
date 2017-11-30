@@ -188,7 +188,7 @@ Partial Class frmPersonas
         '
         Me.btnNroLote.Location = New System.Drawing.Point(279, 161)
         Me.btnNroLote.Name = "btnNroLote"
-        Me.btnNroLote.Size = New System.Drawing.Size(75, 23)
+        Me.btnNroLote.Size = New System.Drawing.Size(83, 23)
         Me.btnNroLote.TabIndex = 8
         Me.btnNroLote.Text = "..."
         Me.btnNroLote.UseVisualStyleBackColor = True

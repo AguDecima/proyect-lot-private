@@ -22,13 +22,14 @@
     End Sub
 
     Private Sub btnCalcularExpensas_Click(sender As Object, e As EventArgs) Handles btnCalcularExpensas.Click
+        nroPersona = CInt(txtIdPersona.Text)
         fechaContratacion = CDate(DTFechaFactura.Text)
         Dim DServicios As New CapaDatos.DServicios()
         Dim NFacturas As New CapaNegocio.NFacturas()
 
         DServicios.FechaContratacion = fechaContratacion
+        DServicios.IdPersona = nroPersona
         txtPrecioExpensas.Text = NFacturas.Expensas(DServicios).ToString
-        txtPrecioExpensas.Enabled = False
     End Sub
 
     Private Sub btnVerificar_Click(sender As Object, e As EventArgs) Handles btnVerificar.Click
@@ -64,7 +65,7 @@
         Dim NFacturas As New CapaNegocio.NFacturas
 
         txtTotalFactura.Text = NFacturas.calcularTotal(DFactura)
-        txtTotalFactura.Enabled = False
+
     End Sub
 
     Private Sub btnCrear_Click(sender As Object, e As EventArgs) Handles btnCrear.Click
