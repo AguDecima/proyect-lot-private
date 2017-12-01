@@ -56,6 +56,7 @@ Partial Class frmFacturas
         Me.DGListaFacturas = New System.Windows.Forms.DataGridView()
         Me.txtBuscar = New System.Windows.Forms.TextBox()
         Me.btnBuscar = New System.Windows.Forms.Button()
+        Me.btnPrinter = New System.Windows.Forms.Button()
         Me.TabFacturas.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
@@ -77,6 +78,7 @@ Partial Class frmFacturas
         '
         'TabPage1
         '
+        Me.TabPage1.Controls.Add(Me.btnPrinter)
         Me.TabPage1.Controls.Add(Me.btnVerificar)
         Me.TabPage1.Controls.Add(Me.btnCalcularTotal)
         Me.TabPage1.Controls.Add(Me.btnCalcularPrecioAlquiler)
@@ -181,7 +183,7 @@ Partial Class frmFacturas
         '
         'btnBorrar
         '
-        Me.btnBorrar.Location = New System.Drawing.Point(371, 264)
+        Me.btnBorrar.Location = New System.Drawing.Point(290, 264)
         Me.btnBorrar.Name = "btnBorrar"
         Me.btnBorrar.Size = New System.Drawing.Size(75, 23)
         Me.btnBorrar.TabIndex = 13
@@ -190,7 +192,7 @@ Partial Class frmFacturas
         '
         'btnEliminar
         '
-        Me.btnEliminar.Location = New System.Drawing.Point(251, 264)
+        Me.btnEliminar.Location = New System.Drawing.Point(206, 264)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(75, 23)
         Me.btnEliminar.TabIndex = 12
@@ -199,7 +201,7 @@ Partial Class frmFacturas
         '
         'btnModificar
         '
-        Me.btnModificar.Location = New System.Drawing.Point(123, 264)
+        Me.btnModificar.Location = New System.Drawing.Point(109, 264)
         Me.btnModificar.Name = "btnModificar"
         Me.btnModificar.Size = New System.Drawing.Size(75, 23)
         Me.btnModificar.TabIndex = 11
@@ -396,6 +398,15 @@ Partial Class frmFacturas
         Me.btnBuscar.Text = "Buscar"
         Me.btnBuscar.UseVisualStyleBackColor = True
         '
+        'btnPrinter
+        '
+        Me.btnPrinter.Location = New System.Drawing.Point(385, 264)
+        Me.btnPrinter.Name = "btnPrinter"
+        Me.btnPrinter.Size = New System.Drawing.Size(75, 23)
+        Me.btnPrinter.TabIndex = 25
+        Me.btnPrinter.Text = "Imprimir"
+        Me.btnPrinter.UseVisualStyleBackColor = True
+        '
         'frmFacturas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -449,4 +460,5 @@ Partial Class frmFacturas
     Friend WithEvents btnCalcularPrecioAlquiler As Button
     Friend WithEvents btnVerificar As Button
     Friend WithEvents btnCalcularTotal As Button
+    Friend WithEvents btnPrinter As Button
 End Class

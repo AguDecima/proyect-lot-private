@@ -147,7 +147,8 @@ Public Class NFacturas
     Public Function findAll() As DataTable
         Dim cn As New Conexion
         cn.conectar()
-        Dim cadena_find As String = "SELECT id_facturas AS 'Nro Factura', id_persona AS 'Nro Persona', total_pagar AS 'Monto Total'," +
+        Dim cadena_find As String = "SELECT id_facturas AS 'Nro Factura', id_persona AS 'Nro Persona', precio_alquiler AS 'Precio Alquiler'," +
+            "precio_expensas AS 'Precio Expensas', total_pagar AS 'Monto Total', fecha_expensa AS 'Fecha Contratacion', bonificacion AS Bonificacion," +
             "fecha_vencimiento AS 'Fecha Vencimiento', expensa_pagada AS 'Condicion de Pago' FROM facturas"
 
         Dim comando As New MySqlCommand(cadena_find, cn.MySqlConexion)

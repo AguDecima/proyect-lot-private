@@ -307,53 +307,56 @@
     Private Sub DGListaFacturas_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGListaFacturas.CellDoubleClick
         txtIdFactura.Text = Convert.ToString(DGListaFacturas.CurrentRow.Cells(0).Value)
         txtIdPersona.Text = Convert.ToString(DGListaFacturas.CurrentRow.Cells(1).Value)
-        DTFechaFactura.Text = Convert.ToString(DGListaFacturas.CurrentRow.Cells(3).Value)
+        txtPrecioAlquiler.Text = Convert.ToString(DGListaFacturas.CurrentRow.Cells(2).Value)
+        txtPrecioExpensas.Text = Convert.ToString(DGListaFacturas.CurrentRow.Cells(3).Value)
+        txtTotalFactura.Text = Convert.ToString(DGListaFacturas.CurrentRow.Cells(4).Value)
+        DTFechaFactura.Text = Convert.ToString(DGListaFacturas.CurrentRow.Cells(5).Value)
+        DTFechaVencimiento.Text = Convert.ToString(DGListaFacturas.CurrentRow.Cells(7).Value)
+
     End Sub
 
-    Private Sub PrintDocument1_PrintPage(sender As Object, e As Printing.PrintPageEventArgs)
-        ' Variable a nivel de clase para recordar en qué punto nos hemos quedado 
-        ' la inicializamos a -1 para imprimir también las cabeceras de las columnasprivate 
-        Dim i As Integer = -1
-        ' La fuente que vamos a usar para imprimir.
-        Dim printFont As System.Drawing.Font = New Font("Arial", 10)
-        Dim topMargin As Double = e.MarginBounds.Top
-        Dim yPos As Double = 0
-        Dim linesPerPage As Double = 0
-        Dim count As Integer = 0
-        Dim texto As String = ""
-        Dim row As System.Windows.Forms.DataGridViewRow
 
-        ' Calculamos el número de líneas que caben en cada página. 
-        linesPerPage = e.MarginBounds.Height / printFont.GetHeight(e.Graphics)
-        ' Recorremos las filas del DataGridView hasta que llegemos
-        ' a las líneas que nos caben en cada página o al final del grid. 
-        While count < linesPerPage AndAlso i < DGListaFacturas.Rows.Count
-            row = DGListaFacturas.Rows(i)
-            texto = ""
-            For Each celda As System.Windows.Forms.DataGridViewCell In row.Cells
-                texto += vbCrLf + celda.Value.ToString()
-            Next
-            ' Calculamos la posición en la que se escribe la línea 
-            yPos = topMargin + (count * printFont.GetHeight(e.Graphics))
-            ' Escribimos la línea con el objeto Graphics 
-            e.Graphics.DrawString(texto, printFont, System.Drawing.Brushes.Black, 10, yPos)
-            count += 1
-            i += 1
-        End While
-        ' Una vez fuera del bucle comprobamos si nos quedan más filas 
-        ' por imprimir, si quedan saldrán en la siguente página 
-        If i < DGListaFacturas.Rows.Count Then
-            e.HasMorePages = True
-        Else
-            ' si llegamos al final, se establece HasMorePages a 
-            ' false para que se acabe la impresión 
-            e.HasMorePages = False
-            ' Es necesario poner el contador a 0 porque, por ejemplo si se hace 
-            ' una impresión desde PrintPreviewDialog, se vuelve disparar este 
-            ' evento como si fuese la primera vez, y si i está con el valor de la 
-            ' última fila del grid no se imprime nada 
-            i = 0
+    Private Sub btnPrinter_Click_1(sender As Object, e As EventArgs) Handles btnPrinter.Click
+
+        If (IsNumeric(txtIdFactura.Text) = False Or IsNumeric(txtIdPersona.Text) = False Or
+            IsNumeric(txtPrecioAlquiler.Text) = False Or IsNumeric(txtPrecioExpensas.Text) = False Or
+            isEmptyCadena(CBCondicion.Text) = False) Then
+            MsgBox("Faltan datos para poder imprimir la factura")
+            Exit Sub
         End If
-    End Sub
 
+        Dim nroFactura, nroPersona, fechaCon, fechaVen, precioAlq, precioExp, total, boni, condicion As String
+        Dim sw1 As System.IO.StreamWriter = System.IO.File.CreateText("F:\Taller de Lenguaje II\Trabajo Final\Reportes\temp.txt")
+
+        nroFactura = txtIdFactura.Text
+        nroPersona = txtIdPersona.Text
+        fechaCon = DTFechaFactura.Text
+        fechaVen = DTFechaVencimiento.Text
+        precioAlq = txtPrecioAlquiler.Text
+        precioExp = txtPrecioExpensas.Text
+        total = txtTotalFactura.Text
+        boni = lblBonificacion.Text
+        condicion = CBCondicion.Text
+
+        sw1.WriteLine("FACTURA NRO: " + nroFactura)
+        sw1.WriteLine("---------------------------")
+        sw1.WriteLine("Fecha Contratacion : " + fechaCon)
+        sw1.WriteLine("Fecha Vencimiento : " + fechaVen)
+        sw1.WriteLine("---------------------------")
+        sw1.WriteLine("         DETALLES          ")
+        sw1.WriteLine("---------------------------")
+        sw1.WriteLine("Precio Alquiler : $" + precioAlq)
+        sw1.WriteLine("Precio Expensas : $" + precioExp)
+        sw1.WriteLine("")
+        sw1.WriteLine("Bonificacion : " + boni)
+        sw1.WriteLine("---------------------------")
+        sw1.WriteLine("TOTAL : $" + total)
+        sw1.Close()
+        Try
+            Shell("print /d:LPT1 C:\temp.txt") 'si quieres en FUNCIONA ESTA LINEA CORRECTAMENTE 
+            'un puerto COM : "print/d:COM1 C:/temp.txt" 
+        Catch X As System.IO.FileNotFoundException
+            MsgBox(X.Message)
+        End Try
+    End Sub
 End Class
