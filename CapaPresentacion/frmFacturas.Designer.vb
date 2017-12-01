@@ -354,6 +354,7 @@ Partial Class frmFacturas
         '
         'btnActualizar
         '
+        Me.btnActualizar.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.btnActualizar.Location = New System.Drawing.Point(302, 13)
         Me.btnActualizar.Name = "btnActualizar"
         Me.btnActualizar.Size = New System.Drawing.Size(75, 23)
@@ -368,6 +369,7 @@ Partial Class frmFacturas
         Me.DGListaFacturas.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.DGListaFacturas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DGListaFacturas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGListaFacturas.Location = New System.Drawing.Point(6, 42)
         Me.DGListaFacturas.MultiSelect = False
@@ -378,6 +380,7 @@ Partial Class frmFacturas
         '
         'txtBuscar
         '
+        Me.txtBuscar.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBuscar.Location = New System.Drawing.Point(6, 15)
         Me.txtBuscar.Name = "txtBuscar"
         Me.txtBuscar.Size = New System.Drawing.Size(275, 20)
@@ -385,6 +388,7 @@ Partial Class frmFacturas
         '
         'btnBuscar
         '
+        Me.btnBuscar.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.btnBuscar.Location = New System.Drawing.Point(383, 13)
         Me.btnBuscar.Name = "btnBuscar"
         Me.btnBuscar.Size = New System.Drawing.Size(75, 23)

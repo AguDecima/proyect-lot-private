@@ -32,6 +32,7 @@ Partial Class frmSearchLote
         '
         'txtBuscar
         '
+        Me.txtBuscar.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBuscar.Location = New System.Drawing.Point(13, 13)
         Me.txtBuscar.MaxLength = 5
         Me.txtBuscar.Name = "txtBuscar"
@@ -40,6 +41,7 @@ Partial Class frmSearchLote
         '
         'btnActualizar
         '
+        Me.btnActualizar.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.btnActualizar.Location = New System.Drawing.Point(275, 10)
         Me.btnActualizar.Name = "btnActualizar"
         Me.btnActualizar.Size = New System.Drawing.Size(75, 23)
@@ -49,6 +51,7 @@ Partial Class frmSearchLote
         '
         'btnBuscar
         '
+        Me.btnBuscar.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.btnBuscar.Location = New System.Drawing.Point(357, 9)
         Me.btnBuscar.Name = "btnBuscar"
         Me.btnBuscar.Size = New System.Drawing.Size(75, 23)
@@ -63,6 +66,7 @@ Partial Class frmSearchLote
         Me.DGListaLotePrivados.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.DGListaLotePrivados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DGListaLotePrivados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGListaLotePrivados.Location = New System.Drawing.Point(13, 40)
         Me.DGListaLotePrivados.MultiSelect = False

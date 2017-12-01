@@ -182,6 +182,7 @@ Partial Class frmLotePrivado
         '
         'btnActualizar
         '
+        Me.btnActualizar.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.btnActualizar.Location = New System.Drawing.Point(188, 3)
         Me.btnActualizar.Name = "btnActualizar"
         Me.btnActualizar.Size = New System.Drawing.Size(75, 23)
@@ -196,6 +197,7 @@ Partial Class frmLotePrivado
         Me.DGListaLotesPrivados.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.DGListaLotesPrivados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DGListaLotesPrivados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGListaLotesPrivados.Location = New System.Drawing.Point(7, 33)
         Me.DGListaLotesPrivados.MultiSelect = False
@@ -206,6 +208,7 @@ Partial Class frmLotePrivado
         '
         'btnBuscar
         '
+        Me.btnBuscar.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.btnBuscar.Location = New System.Drawing.Point(268, 3)
         Me.btnBuscar.Name = "btnBuscar"
         Me.btnBuscar.Size = New System.Drawing.Size(75, 23)
@@ -215,6 +218,7 @@ Partial Class frmLotePrivado
         '
         'txtBuscar
         '
+        Me.txtBuscar.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBuscar.Location = New System.Drawing.Point(6, 6)
         Me.txtBuscar.MaxLength = 1
         Me.txtBuscar.Name = "txtBuscar"

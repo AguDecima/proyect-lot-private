@@ -318,6 +318,7 @@ Partial Class frmPersonas
         '
         'btnActualizar
         '
+        Me.btnActualizar.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.btnActualizar.Location = New System.Drawing.Point(204, 5)
         Me.btnActualizar.Name = "btnActualizar"
         Me.btnActualizar.Size = New System.Drawing.Size(75, 23)
@@ -332,6 +333,7 @@ Partial Class frmPersonas
         Me.ListaHabitantes.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ListaHabitantes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.ListaHabitantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ListaHabitantes.Location = New System.Drawing.Point(7, 33)
         Me.ListaHabitantes.MultiSelect = False
@@ -342,6 +344,7 @@ Partial Class frmPersonas
         '
         'btnBuscarHabitantes
         '
+        Me.btnBuscarHabitantes.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.btnBuscarHabitantes.Location = New System.Drawing.Point(285, 4)
         Me.btnBuscarHabitantes.Name = "btnBuscarHabitantes"
         Me.btnBuscarHabitantes.Size = New System.Drawing.Size(75, 23)
@@ -351,6 +354,7 @@ Partial Class frmPersonas
         '
         'txtBuscarHabitantes
         '
+        Me.txtBuscarHabitantes.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBuscarHabitantes.Location = New System.Drawing.Point(7, 7)
         Me.txtBuscarHabitantes.MaxLength = 5
         Me.txtBuscarHabitantes.Name = "txtBuscarHabitantes"
@@ -372,6 +376,7 @@ Partial Class frmPersonas
         '
         'btnMostrar
         '
+        Me.btnMostrar.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.btnMostrar.Location = New System.Drawing.Point(200, 9)
         Me.btnMostrar.Name = "btnMostrar"
         Me.btnMostrar.Size = New System.Drawing.Size(75, 23)
@@ -386,6 +391,7 @@ Partial Class frmPersonas
         Me.ListaPropietarios.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ListaPropietarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.ListaPropietarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ListaPropietarios.Location = New System.Drawing.Point(4, 39)
         Me.ListaPropietarios.MultiSelect = False
@@ -396,6 +402,7 @@ Partial Class frmPersonas
         '
         'btnBuscarPropietarios
         '
+        Me.btnBuscarPropietarios.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.btnBuscarPropietarios.Location = New System.Drawing.Point(281, 10)
         Me.btnBuscarPropietarios.Name = "btnBuscarPropietarios"
         Me.btnBuscarPropietarios.Size = New System.Drawing.Size(75, 23)
@@ -405,6 +412,7 @@ Partial Class frmPersonas
         '
         'txtBuscarPropietarios
         '
+        Me.txtBuscarPropietarios.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBuscarPropietarios.Location = New System.Drawing.Point(4, 11)
         Me.txtBuscarPropietarios.MaxLength = 5
         Me.txtBuscarPropietarios.Name = "txtBuscarPropietarios"
@@ -430,6 +438,7 @@ Partial Class frmPersonas
         Me.HabitantesLotes.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.HabitantesLotes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.HabitantesLotes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.HabitantesLotes.Location = New System.Drawing.Point(9, 36)
         Me.HabitantesLotes.MultiSelect = False
@@ -440,6 +449,7 @@ Partial Class frmPersonas
         '
         'btnHabitanteForLote
         '
+        Me.btnHabitanteForLote.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.btnHabitanteForLote.Location = New System.Drawing.Point(286, 6)
         Me.btnHabitanteForLote.Name = "btnHabitanteForLote"
         Me.btnHabitanteForLote.Size = New System.Drawing.Size(75, 23)
@@ -449,6 +459,7 @@ Partial Class frmPersonas
         '
         'txtBuscarHabForLote
         '
+        Me.txtBuscarHabForLote.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBuscarHabForLote.Location = New System.Drawing.Point(8, 9)
         Me.txtBuscarHabForLote.MaxLength = 5
         Me.txtBuscarHabForLote.Name = "txtBuscarHabForLote"
