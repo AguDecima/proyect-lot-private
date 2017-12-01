@@ -296,4 +296,14 @@
             e.Handled = True
         End If
     End Sub
+
+    Private Sub btnIdPersona_Click(sender As Object, e As EventArgs) Handles btnIdPersona.Click
+        frmSearchHabitantes.Show()
+    End Sub
+
+    Private Sub DGListaFacturas_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGListaFacturas.CellDoubleClick
+        txtIdFactura.Text = Convert.ToString(DGListaFacturas.CurrentRow.Cells(0).Value)
+        txtIdPersona.Text = Convert.ToString(DGListaFacturas.CurrentRow.Cells(1).Value)
+        DTFechaFactura.Text = Convert.ToString(DGListaFacturas.CurrentRow.Cells(3).Value)
+    End Sub
 End Class

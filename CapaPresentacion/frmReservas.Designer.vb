@@ -260,6 +260,7 @@ Partial Class frmReservas
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DGListaReservas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGListaReservas.Location = New System.Drawing.Point(6, 33)
+        Me.DGListaReservas.MultiSelect = False
         Me.DGListaReservas.Name = "DGListaReservas"
         Me.DGListaReservas.ReadOnly = True
         Me.DGListaReservas.Size = New System.Drawing.Size(345, 188)

@@ -334,6 +334,7 @@ Partial Class frmPersonas
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ListaHabitantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ListaHabitantes.Location = New System.Drawing.Point(7, 33)
+        Me.ListaHabitantes.MultiSelect = False
         Me.ListaHabitantes.Name = "ListaHabitantes"
         Me.ListaHabitantes.ReadOnly = True
         Me.ListaHabitantes.Size = New System.Drawing.Size(353, 233)
@@ -387,6 +388,7 @@ Partial Class frmPersonas
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ListaPropietarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ListaPropietarios.Location = New System.Drawing.Point(4, 39)
+        Me.ListaPropietarios.MultiSelect = False
         Me.ListaPropietarios.Name = "ListaPropietarios"
         Me.ListaPropietarios.ReadOnly = True
         Me.ListaPropietarios.Size = New System.Drawing.Size(352, 230)
@@ -430,6 +432,7 @@ Partial Class frmPersonas
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.HabitantesLotes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.HabitantesLotes.Location = New System.Drawing.Point(9, 36)
+        Me.HabitantesLotes.MultiSelect = False
         Me.HabitantesLotes.Name = "HabitantesLotes"
         Me.HabitantesLotes.ReadOnly = True
         Me.HabitantesLotes.Size = New System.Drawing.Size(352, 230)

@@ -72,6 +72,24 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormSearch\frmSearchHabitantes.Designer.vb">
+      <DependentUpon>frmSearchHabitantes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSearch\frmSearchHabitantes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSearch\frmSearchLote.Designer.vb">
+      <DependentUpon>frmSearchLote.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSearch\frmSearchLote.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSearch\frmSearchLotePublico.Designer.vb">
+      <DependentUpon>frmSearchLotePublico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSearch\frmSearchLotePublico.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmFacturas.Designer.vb">
       <DependentUpon>frmFacturas.vb</DependentUpon>
     </Compile>
@@ -132,6 +150,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FormSearch\frmSearchHabitantes.resx">
+      <DependentUpon>frmSearchHabitantes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSearch\frmSearchLote.resx">
+      <DependentUpon>frmSearchLote.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSearch\frmSearchLotePublico.resx">
+      <DependentUpon>frmSearchLotePublico.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmFacturas.resx">
       <DependentUpon>frmFacturas.vb</DependentUpon>
     </EmbeddedResource>

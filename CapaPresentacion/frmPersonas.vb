@@ -291,9 +291,10 @@
         txtTelefono.Clear()
         txtDni.Clear()
         txtNroLote.Clear()
-        cbHabitante.ResetText()
-        cbPropietario.ResetText()
-        txtNroLote.Focus()
+        cbHabitante.Checked = False
+        cbPropietario.Checked = False
+        txtIdPersona.Clear()
+        txtNombre.Focus()
     End Sub
 
     Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
@@ -321,5 +322,17 @@
         cbPropietario.ResetText()
         txtNroLote.Focus()
 
+    End Sub
+
+    Private Sub ListaHabitantes_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles ListaHabitantes.CellDoubleClick
+        txtIdPersona.Text = Convert.ToString(ListaHabitantes.CurrentRow.Cells(0).Value)
+        txtNombre.Text = Convert.ToString(ListaHabitantes.CurrentRow.Cells(1).Value)
+        txtApellido.Text = Convert.ToString(ListaHabitantes.CurrentRow.Cells(2).Value)
+        txtTelefono.Text = Convert.ToString(ListaHabitantes.CurrentRow.Cells(3).Value)
+        txtNroLote.Text = Convert.ToString(ListaHabitantes.CurrentRow.Cells(4).Value)
+    End Sub
+
+    Private Sub btnNroLote_Click(sender As Object, e As EventArgs) Handles btnNroLote.Click
+        frmSearchLote.Show()
     End Sub
 End Class

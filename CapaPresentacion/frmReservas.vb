@@ -187,4 +187,20 @@
             e.Handled = True
         End If
     End Sub
+
+    Private Sub DGListaReservas_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGListaReservas.CellDoubleClick
+        txtIdHabitante.Text = Convert.ToString(DGListaReservas.CurrentRow.Cells(1).Value)
+        DTFechaContratacion.Text = Convert.ToString(DGListaReservas.CurrentRow.Cells(2).Value)
+        DTFechaVencimiento.Text = Convert.ToString(DGListaReservas.CurrentRow.Cells(3).Value)
+        txtPrecio.Text = Convert.ToString(DGListaReservas.CurrentRow.Cells(4).Value)
+        txtLotePublico.Text = Convert.ToString(DGListaReservas.CurrentRow.Cells(5).Value)
+    End Sub
+
+    Private Sub btnIdHabitante_Click(sender As Object, e As EventArgs) Handles btnIdHabitante.Click
+        frmSearchHabitantes.Show()
+    End Sub
+
+    Private Sub btnIdLotePublico_Click(sender As Object, e As EventArgs) Handles btnIdLotePublico.Click
+        frmSearchLotePublico.Show()
+    End Sub
 End Class

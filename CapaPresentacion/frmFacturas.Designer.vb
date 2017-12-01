@@ -370,6 +370,7 @@ Partial Class frmFacturas
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DGListaFacturas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGListaFacturas.Location = New System.Drawing.Point(6, 42)
+        Me.DGListaFacturas.MultiSelect = False
         Me.DGListaFacturas.Name = "DGListaFacturas"
         Me.DGListaFacturas.ReadOnly = True
         Me.DGListaFacturas.Size = New System.Drawing.Size(452, 272)

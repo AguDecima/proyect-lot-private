@@ -185,4 +185,15 @@
         End If
     End Sub
 
+    Private Sub DGListaServicios_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGListaServicios.CellDoubleClick
+        txtNroServicio.Text = Convert.ToString(DGListaServicios.CurrentRow.Cells(0).Value)
+        txtNroLote.Text = Convert.ToString(DGListaServicios.CurrentRow.Cells(1).Value)
+        CBNombres.Text = Convert.ToString(DGListaServicios.CurrentRow.Cells(2).Value)
+        DTFechaContratacion.Text = Convert.ToString(DGListaServicios.CurrentRow.Cells(3).Value)
+        txtPrecio.Text = Convert.ToString(DGListaServicios.CurrentRow.Cells(4).Value)
+    End Sub
+
+    Private Sub btnNroLote_Click(sender As Object, e As EventArgs) Handles btnNroLote.Click
+        frmSearchHabitantes.Show()
+    End Sub
 End Class

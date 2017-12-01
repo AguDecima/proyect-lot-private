@@ -173,4 +173,10 @@
             e.Handled = True
         End If
     End Sub
+
+    Private Sub DGListaLotesPrivados_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGListaLotesPrivados.CellDoubleClick
+        txtIdLote.Text = Convert.ToString(DGListaLotesPrivados.CurrentRow.Cells(0).Value)
+        txtAreaLote.Text = Convert.ToString(DGListaLotesPrivados.CurrentRow.Cells(1).Value)
+        txtPrecio.Text = Convert.ToString(DGListaLotesPrivados.CurrentRow.Cells(2).Value)
+    End Sub
 End Class

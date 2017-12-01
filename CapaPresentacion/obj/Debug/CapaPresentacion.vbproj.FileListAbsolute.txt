@@ -74,3 +74,6 @@ F:\Taller de Lenguaje II\Trabajo Final\app con git\Barrio Privado\CapaPresentaci
 F:\Taller de Lenguaje II\Trabajo Final\app con git\Barrio Privado\CapaPresentacion\obj\Debug\CapaPresentacion.frmServicios.resources
 F:\Taller de Lenguaje II\Trabajo Final\app con git\Barrio Privado\CapaPresentacion\obj\Debug\CapaPresentacion.Resources.resources
 F:\Taller de Lenguaje II\Trabajo Final\app con git\Barrio Privado\CapaPresentacion\obj\Debug\CapaPresentacion.vbproj.GenerateResource.Cache
+F:\Taller de Lenguaje II\Trabajo Final\app con git\Barrio Privado\CapaPresentacion\obj\Debug\CapaPresentacion.frmSearchLote.resources
+F:\Taller de Lenguaje II\Trabajo Final\app con git\Barrio Privado\CapaPresentacion\obj\Debug\CapaPresentacion.frmSearchHabitantes.resources
+F:\Taller de Lenguaje II\Trabajo Final\app con git\Barrio Privado\CapaPresentacion\obj\Debug\CapaPresentacion.frmSearchLotePublico.resources

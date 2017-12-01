@@ -149,4 +149,10 @@
         txtIdLote.Focus()
 
     End Sub
+
+    Private Sub DGListaLotesPublicos_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGListaLotesPublicos.CellDoubleClick
+        txtIdLote.Text = Convert.ToString(DGListaLotesPublicos.CurrentRow.Cells(0).Value)
+        txtNombreLote.Text = Convert.ToString(DGListaLotesPublicos.CurrentRow.Cells(1).Value)
+    End Sub
+
 End Class

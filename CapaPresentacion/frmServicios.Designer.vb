@@ -276,6 +276,7 @@ Partial Class frmServicios
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DGListaServicios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGListaServicios.Location = New System.Drawing.Point(6, 39)
+        Me.DGListaServicios.MultiSelect = False
         Me.DGListaServicios.Name = "DGListaServicios"
         Me.DGListaServicios.ReadOnly = True
         Me.DGListaServicios.Size = New System.Drawing.Size(404, 213)

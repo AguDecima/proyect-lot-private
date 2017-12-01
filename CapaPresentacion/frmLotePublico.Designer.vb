@@ -200,6 +200,7 @@ Partial Class frmLotePublico
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DGListaLotesPublicos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGListaLotesPublicos.Location = New System.Drawing.Point(7, 33)
+        Me.DGListaLotesPublicos.MultiSelect = False
         Me.DGListaLotesPublicos.Name = "DGListaLotesPublicos"
         Me.DGListaLotesPublicos.ReadOnly = True
         Me.DGListaLotesPublicos.Size = New System.Drawing.Size(336, 144)
