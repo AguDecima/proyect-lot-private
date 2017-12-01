@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmFacturas
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmFacturas
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmFacturas))
         Me.TabFacturas = New System.Windows.Forms.TabControl()
@@ -72,7 +72,7 @@ Partial Class frmFacturas
         Me.TabFacturas.Location = New System.Drawing.Point(13, 13)
         Me.TabFacturas.Name = "TabFacturas"
         Me.TabFacturas.SelectedIndex = 0
-        Me.TabFacturas.Size = New System.Drawing.Size(477, 346)
+        Me.TabFacturas.Size = New System.Drawing.Size(477, 343)
         Me.TabFacturas.TabIndex = 0
         '
         'TabPage1
@@ -106,7 +106,7 @@ Partial Class frmFacturas
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(469, 320)
+        Me.TabPage1.Size = New System.Drawing.Size(469, 317)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Datos"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -347,7 +347,7 @@ Partial Class frmFacturas
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(469, 320)
+        Me.TabPage2.Size = New System.Drawing.Size(469, 317)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Lista"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -355,7 +355,7 @@ Partial Class frmFacturas
         'btnActualizar
         '
         Me.btnActualizar.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.btnActualizar.Location = New System.Drawing.Point(302, 13)
+        Me.btnActualizar.Location = New System.Drawing.Point(302, 11)
         Me.btnActualizar.Name = "btnActualizar"
         Me.btnActualizar.Size = New System.Drawing.Size(75, 23)
         Me.btnActualizar.TabIndex = 2
@@ -375,13 +375,13 @@ Partial Class frmFacturas
         Me.DGListaFacturas.MultiSelect = False
         Me.DGListaFacturas.Name = "DGListaFacturas"
         Me.DGListaFacturas.ReadOnly = True
-        Me.DGListaFacturas.Size = New System.Drawing.Size(452, 272)
+        Me.DGListaFacturas.Size = New System.Drawing.Size(452, 269)
         Me.DGListaFacturas.TabIndex = 2
         '
         'txtBuscar
         '
         Me.txtBuscar.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtBuscar.Location = New System.Drawing.Point(6, 15)
+        Me.txtBuscar.Location = New System.Drawing.Point(6, 13)
         Me.txtBuscar.Name = "txtBuscar"
         Me.txtBuscar.Size = New System.Drawing.Size(275, 20)
         Me.txtBuscar.TabIndex = 1
@@ -389,7 +389,7 @@ Partial Class frmFacturas
         'btnBuscar
         '
         Me.btnBuscar.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.btnBuscar.Location = New System.Drawing.Point(383, 13)
+        Me.btnBuscar.Location = New System.Drawing.Point(383, 11)
         Me.btnBuscar.Name = "btnBuscar"
         Me.btnBuscar.Size = New System.Drawing.Size(75, 23)
         Me.btnBuscar.TabIndex = 3
@@ -400,7 +400,7 @@ Partial Class frmFacturas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(502, 371)
+        Me.ClientSize = New System.Drawing.Size(502, 368)
         Me.Controls.Add(Me.TabFacturas)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmFacturas"

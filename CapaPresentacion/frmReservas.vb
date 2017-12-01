@@ -113,6 +113,10 @@
         DGListaReservas.DataSource = datosReserva
 
         txtIdHabitante.Focus()
+
+        txtIdHabitante.Clear()
+        txtLotePublico.Clear()
+
     End Sub
 
     Private Sub btnActualizar_Click(sender As Object, e As EventArgs) Handles btnActualizar.Click

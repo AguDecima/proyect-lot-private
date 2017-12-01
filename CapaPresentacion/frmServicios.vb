@@ -111,6 +111,9 @@
         DGListaServicios.DataSource = datosReserva
 
         txtNroLote.Focus()
+
+        txtNroLote.Clear()
+
     End Sub
 
     Private Sub btnActualizar_Click(sender As Object, e As EventArgs) Handles btnActualizar.Click

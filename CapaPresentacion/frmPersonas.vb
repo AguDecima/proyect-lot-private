@@ -108,6 +108,8 @@
         txtNombre.Focus()
         DTFechaNacimiento.MaxDate = Today
 
+        txtNroLote.Clear()
+
     End Sub
 
     Private Sub btnActualizar_Click(sender As Object, e As EventArgs) Handles btnActualizar.Click

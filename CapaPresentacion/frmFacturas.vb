@@ -227,6 +227,9 @@
         dataFactura = NFactura.findAll()
 
         DGListaFacturas.DataSource = dataFactura
+
+        txtIdPersona.Clear()
+
     End Sub
 
     Private Sub btnActualizar_Click(sender As Object, e As EventArgs) Handles btnActualizar.Click
@@ -306,4 +309,51 @@
         txtIdPersona.Text = Convert.ToString(DGListaFacturas.CurrentRow.Cells(1).Value)
         DTFechaFactura.Text = Convert.ToString(DGListaFacturas.CurrentRow.Cells(3).Value)
     End Sub
+
+    Private Sub PrintDocument1_PrintPage(sender As Object, e As Printing.PrintPageEventArgs)
+        ' Variable a nivel de clase para recordar en qué punto nos hemos quedado 
+        ' la inicializamos a -1 para imprimir también las cabeceras de las columnasprivate 
+        Dim i As Integer = -1
+        ' La fuente que vamos a usar para imprimir.
+        Dim printFont As System.Drawing.Font = New Font("Arial", 10)
+        Dim topMargin As Double = e.MarginBounds.Top
+        Dim yPos As Double = 0
+        Dim linesPerPage As Double = 0
+        Dim count As Integer = 0
+        Dim texto As String = ""
+        Dim row As System.Windows.Forms.DataGridViewRow
+
+        ' Calculamos el número de líneas que caben en cada página. 
+        linesPerPage = e.MarginBounds.Height / printFont.GetHeight(e.Graphics)
+        ' Recorremos las filas del DataGridView hasta que llegemos
+        ' a las líneas que nos caben en cada página o al final del grid. 
+        While count < linesPerPage AndAlso i < DGListaFacturas.Rows.Count
+            row = DGListaFacturas.Rows(i)
+            texto = ""
+            For Each celda As System.Windows.Forms.DataGridViewCell In row.Cells
+                texto += vbCrLf + celda.Value.ToString()
+            Next
+            ' Calculamos la posición en la que se escribe la línea 
+            yPos = topMargin + (count * printFont.GetHeight(e.Graphics))
+            ' Escribimos la línea con el objeto Graphics 
+            e.Graphics.DrawString(texto, printFont, System.Drawing.Brushes.Black, 10, yPos)
+            count += 1
+            i += 1
+        End While
+        ' Una vez fuera del bucle comprobamos si nos quedan más filas 
+        ' por imprimir, si quedan saldrán en la siguente página 
+        If i < DGListaFacturas.Rows.Count Then
+            e.HasMorePages = True
+        Else
+            ' si llegamos al final, se establece HasMorePages a 
+            ' false para que se acabe la impresión 
+            e.HasMorePages = False
+            ' Es necesario poner el contador a 0 porque, por ejemplo si se hace 
+            ' una impresión desde PrintPreviewDialog, se vuelve disparar este 
+            ' evento como si fuese la primera vez, y si i está con el valor de la 
+            ' última fila del grid no se imprime nada 
+            i = 0
+        End If
+    End Sub
+
 End Class
