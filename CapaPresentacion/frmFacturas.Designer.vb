@@ -25,6 +25,7 @@ Partial Class frmFacturas
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmFacturas))
         Me.TabFacturas = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.btnPrinter = New System.Windows.Forms.Button()
         Me.btnVerificar = New System.Windows.Forms.Button()
         Me.btnCalcularTotal = New System.Windows.Forms.Button()
         Me.btnCalcularPrecioAlquiler = New System.Windows.Forms.Button()
@@ -56,7 +57,7 @@ Partial Class frmFacturas
         Me.DGListaFacturas = New System.Windows.Forms.DataGridView()
         Me.txtBuscar = New System.Windows.Forms.TextBox()
         Me.btnBuscar = New System.Windows.Forms.Button()
-        Me.btnPrinter = New System.Windows.Forms.Button()
+        Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.TabFacturas.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
@@ -112,6 +113,15 @@ Partial Class frmFacturas
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Datos"
         Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'btnPrinter
+        '
+        Me.btnPrinter.Location = New System.Drawing.Point(385, 264)
+        Me.btnPrinter.Name = "btnPrinter"
+        Me.btnPrinter.Size = New System.Drawing.Size(75, 23)
+        Me.btnPrinter.TabIndex = 25
+        Me.btnPrinter.Text = "Imprimir"
+        Me.btnPrinter.UseVisualStyleBackColor = True
         '
         'btnVerificar
         '
@@ -398,15 +408,6 @@ Partial Class frmFacturas
         Me.btnBuscar.Text = "Buscar"
         Me.btnBuscar.UseVisualStyleBackColor = True
         '
-        'btnPrinter
-        '
-        Me.btnPrinter.Location = New System.Drawing.Point(385, 264)
-        Me.btnPrinter.Name = "btnPrinter"
-        Me.btnPrinter.Size = New System.Drawing.Size(75, 23)
-        Me.btnPrinter.TabIndex = 25
-        Me.btnPrinter.Text = "Imprimir"
-        Me.btnPrinter.UseVisualStyleBackColor = True
-        '
         'frmFacturas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -461,4 +462,5 @@ Partial Class frmFacturas
     Friend WithEvents btnVerificar As Button
     Friend WithEvents btnCalcularTotal As Button
     Friend WithEvents btnPrinter As Button
+    Friend WithEvents PrintDocument1 As Printing.PrintDocument
 End Class

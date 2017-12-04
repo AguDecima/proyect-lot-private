@@ -60,6 +60,24 @@ Public Class NFacturas
 
     End Function
 
+    'verifico si existe la factura
+    Public Function verificoFactura(factura As CapaDatos.DFacturas) As Integer
+        Dim cn As New Conexion
+        Dim isFactura As Integer
+        cn.conectar()
+
+        Try
+            Dim existe_factura = "SELECT id_facturas FROM facturas WHERE id_facturas = @id "
+            Dim comando As New MySqlCommand(existe_factura, cn.MySqlConexion)
+            comando.Parameters.AddWithValue("@id", factura.IdPersona)
+            isFactura = comando.ExecuteScalar
+            Return isFactura
+        Catch ex As Exception
+            Return MsgBox(ex.Message)
+        End Try
+
+    End Function
+
     'calculo del total que debe pagar
     Public Function calcularTotal(factura As CapaDatos.DFacturas) As Double
         Dim total As Double = 0

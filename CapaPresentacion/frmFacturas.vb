@@ -1,4 +1,8 @@
-﻿Public Class frmFacturas
+﻿
+Imports System.Drawing.Printing
+
+Public Class frmFacturas
+
     Dim nroFactura As Integer
     Dim nroPersona As Integer
     Dim fechaContratacion As Date
@@ -8,6 +12,9 @@
     Dim bonificacion As Boolean
     Dim total As Double
     Dim condicion As Boolean
+    Dim text_factura As String = ""
+
+
 
     Private Sub btnCalcularPrecioAlquiler_Click(sender As Object, e As EventArgs) Handles btnCalcularPrecioAlquiler.Click
 
@@ -18,12 +25,12 @@
 
         nroPersona = CInt(txtIdPersona.Text)
 
-            Dim DPersona As New CapaDatos.DPersonas()
-            DPersona.IdPersona = nroPersona
-            Dim NFacturas As New CapaNegocio.NFacturas()
+        Dim DPersona As New CapaDatos.DPersonas()
+        DPersona.IdPersona = nroPersona
+        Dim NFacturas As New CapaNegocio.NFacturas()
 
-            txtPrecioAlquiler.Text = NFacturas.PrecioAlquiler(DPersona)
-            txtPrecioAlquiler.Enabled = False
+        txtPrecioAlquiler.Text = NFacturas.PrecioAlquiler(DPersona)
+        txtPrecioAlquiler.Enabled = False
 
     End Sub
 
@@ -325,38 +332,96 @@
             Exit Sub
         End If
 
-        Dim nroFactura, nroPersona, fechaCon, fechaVen, precioAlq, precioExp, total, boni, condicion As String
-        Dim sw1 As System.IO.StreamWriter = System.IO.File.CreateText("F:\Taller de Lenguaje II\Trabajo Final\Reportes\temp.txt")
+        Dim id = CInt(txtIdFactura.Text)
+        Dim verifico As Integer
+        Dim DFactura As New CapaDatos.DFacturas
+        DFactura.IdPersona = id
+        Dim NFactura As New CapaNegocio.NFacturas
 
-        nroFactura = txtIdFactura.Text
-        nroPersona = txtIdPersona.Text
-        fechaCon = DTFechaFactura.Text
-        fechaVen = DTFechaVencimiento.Text
-        precioAlq = txtPrecioAlquiler.Text
-        precioExp = txtPrecioExpensas.Text
-        total = txtTotalFactura.Text
-        boni = lblBonificacion.Text
-        condicion = CBCondicion.Text
+        verifico = NFactura.verificoFactura(DFactura)
 
-        sw1.WriteLine("FACTURA NRO: " + nroFactura)
-        sw1.WriteLine("---------------------------")
-        sw1.WriteLine("Fecha Contratacion : " + fechaCon)
-        sw1.WriteLine("Fecha Vencimiento : " + fechaVen)
-        sw1.WriteLine("---------------------------")
-        sw1.WriteLine("         DETALLES          ")
-        sw1.WriteLine("---------------------------")
-        sw1.WriteLine("Precio Alquiler : $" + precioAlq)
-        sw1.WriteLine("Precio Expensas : $" + precioExp)
-        sw1.WriteLine("")
-        sw1.WriteLine("Bonificacion : " + boni)
-        sw1.WriteLine("---------------------------")
-        sw1.WriteLine("TOTAL : $" + total)
-        sw1.Close()
-        Try
-            Shell("print /d:LPT1 C:\temp.txt") 'si quieres en FUNCIONA ESTA LINEA CORRECTAMENTE 
-            'un puerto COM : "print/d:COM1 C:/temp.txt" 
-        Catch X As System.IO.FileNotFoundException
-            MsgBox(X.Message)
-        End Try
+        If verifico <> 0 Then
+            Dim nroFactura, nroPersona, fechaCon, fechaVen, precioAlq, precioExp, total, boni, condicion As String
+
+
+            nroFactura = txtIdFactura.Text
+            nroPersona = txtIdPersona.Text
+            fechaCon = DTFechaFactura.Text
+            fechaVen = DTFechaVencimiento.Text
+            precioAlq = txtPrecioAlquiler.Text
+            precioExp = txtPrecioExpensas.Text
+            total = txtTotalFactura.Text
+            boni = lblBonificacion.Text
+            condicion = CBCondicion.Text
+
+
+
+            text_factura = text_factura + ("FACTURA NRO: " + nroFactura + vbCrLf)
+            text_factura = text_factura + ("---------------------------" + vbCrLf)
+            text_factura = text_factura + ("Fecha Contratacion : " + fechaCon + vbCrLf)
+            text_factura = text_factura + ("Fecha Vencimiento : " + fechaVen + vbCrLf)
+            text_factura = text_factura + ("---------------------------" + vbCrLf)
+            text_factura = text_factura + ("         DETALLES          " + vbCrLf)
+            text_factura = text_factura + ("---------------------------" + vbCrLf)
+            text_factura = text_factura + ("Precio Alquiler : $" + precioAlq + vbCrLf)
+            text_factura = text_factura + ("Precio Expensas : $" + precioExp + vbCrLf)
+            text_factura = text_factura + ("" + vbCrLf)
+            text_factura = text_factura + ("Bonificacion : " + boni + vbCrLf)
+            text_factura = text_factura + ("---------------------------" + vbCrLf)
+            text_factura = text_factura + ("TOTAL : $" + total + vbCrLf)
+
+            selectPrinterAndPrint()
+
+
+        Else
+            MsgBox("Guarde la factura antes de imprimirla.")
+        End If
     End Sub
+
+    ' funcion para indicar al print el dato que deseamos imprimir
+    Public Sub print_PrintPage(ByVal sender As Object,
+                            ByVal e As PrintPageEventArgs)
+
+        ' imprimimos la cadena en el margen izquierdo
+        Dim xPos As Single = e.MarginBounds.Left
+        ' La fuente a usar
+        Dim prFont As New Font("Arial", 18, FontStyle.Bold)
+        ' la posición superior
+        Dim yPos As Single = prFont.GetHeight(e.Graphics)
+
+        ' imprimimos la cadena
+        e.Graphics.DrawString(text_factura, prFont, Brushes.Black, xPos, yPos)
+        ' indicamos que ya no hay nada más que imprimir
+        ' (el valor predeterminado de esta propiedad es False)
+        e.HasMorePages = False
+
+    End Sub
+
+    ' funcion para elegir una impresora y imprimir la factura
+    Private Function selectPrinterAndPrint() As Boolean
+        Dim prtDialog As New PrintDialog
+
+        With prtDialog
+            .AllowPrintToFile = False
+            .AllowSelection = False
+            .AllowSomePages = False
+            .PrintToFile = False
+            .ShowHelp = False
+            .ShowNetwork = True
+
+            If .ShowDialog() = DialogResult.OK Then
+                AddHandler PrintDocument1.PrintPage, AddressOf print_PrintPage
+                PrintDocument1.Print()
+            Else
+                Return False
+            End If
+
+        End With
+
+        Return True
+    End Function
+
+
+
+
 End Class

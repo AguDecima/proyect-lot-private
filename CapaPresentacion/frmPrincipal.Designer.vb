@@ -48,7 +48,6 @@ Partial Class frmPrincipal
         Me.ListaFacturasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AcercaDeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ManualDeUsoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel = New System.Windows.Forms.ToolStripStatusLabel()
@@ -162,13 +161,13 @@ Partial Class frmPrincipal
         'NuevaReservaToolStripMenuItem
         '
         Me.NuevaReservaToolStripMenuItem.Name = "NuevaReservaToolStripMenuItem"
-        Me.NuevaReservaToolStripMenuItem.Size = New System.Drawing.Size(151, 22)
+        Me.NuevaReservaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.NuevaReservaToolStripMenuItem.Text = "Nueva Reserva"
         '
         'ListaReservasToolStripMenuItem
         '
         Me.ListaReservasToolStripMenuItem.Name = "ListaReservasToolStripMenuItem"
-        Me.ListaReservasToolStripMenuItem.Size = New System.Drawing.Size(151, 22)
+        Me.ListaReservasToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ListaReservasToolStripMenuItem.Text = "Lista Reservas"
         '
         'FacturasToolStripMenuItem
@@ -181,18 +180,18 @@ Partial Class frmPrincipal
         'FacturasToolStripMenuItem1
         '
         Me.FacturasToolStripMenuItem1.Name = "FacturasToolStripMenuItem1"
-        Me.FacturasToolStripMenuItem1.Size = New System.Drawing.Size(145, 22)
+        Me.FacturasToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.FacturasToolStripMenuItem1.Text = "Crear Factura"
         '
         'ListaFacturasToolStripMenuItem
         '
         Me.ListaFacturasToolStripMenuItem.Name = "ListaFacturasToolStripMenuItem"
-        Me.ListaFacturasToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
+        Me.ListaFacturasToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ListaFacturasToolStripMenuItem.Text = "Lista Facturas"
         '
         'SalirToolStripMenuItem
         '
-        Me.SalirToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AcercaDeToolStripMenuItem, Me.ManualDeUsoToolStripMenuItem, Me.SalirToolStripMenuItem1})
+        Me.SalirToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AcercaDeToolStripMenuItem, Me.SalirToolStripMenuItem1})
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
         Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
         Me.SalirToolStripMenuItem.Text = "Ayuda"
@@ -200,19 +199,13 @@ Partial Class frmPrincipal
         'AcercaDeToolStripMenuItem
         '
         Me.AcercaDeToolStripMenuItem.Name = "AcercaDeToolStripMenuItem"
-        Me.AcercaDeToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
+        Me.AcercaDeToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.AcercaDeToolStripMenuItem.Text = "Acerca de..."
-        '
-        'ManualDeUsoToolStripMenuItem
-        '
-        Me.ManualDeUsoToolStripMenuItem.Name = "ManualDeUsoToolStripMenuItem"
-        Me.ManualDeUsoToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
-        Me.ManualDeUsoToolStripMenuItem.Text = "Manual de Uso"
         '
         'SalirToolStripMenuItem1
         '
         Me.SalirToolStripMenuItem1.Name = "SalirToolStripMenuItem1"
-        Me.SalirToolStripMenuItem1.Size = New System.Drawing.Size(153, 22)
+        Me.SalirToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.SalirToolStripMenuItem1.Text = "Salir"
         '
         'StatusStrip
@@ -270,7 +263,6 @@ Partial Class frmPrincipal
     Friend WithEvents ListaReservasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SalirToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AcercaDeToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ManualDeUsoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SalirToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents ListaHabitantesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ListaPropietariosToolStripMenuItem1 As ToolStripMenuItem

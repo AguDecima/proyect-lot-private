@@ -224,7 +224,7 @@ Partial Class frmPersonas
         'txtApellido
         '
         Me.txtApellido.Location = New System.Drawing.Point(112, 36)
-        Me.txtApellido.MaxLength = 45
+        Me.txtApellido.MaxLength = 30
         Me.txtApellido.Name = "txtApellido"
         Me.txtApellido.Size = New System.Drawing.Size(250, 20)
         Me.txtApellido.TabIndex = 3
@@ -232,7 +232,7 @@ Partial Class frmPersonas
         'txtNombre
         '
         Me.txtNombre.Location = New System.Drawing.Point(112, 6)
-        Me.txtNombre.MaxLength = 45
+        Me.txtNombre.MaxLength = 30
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(161, 20)
         Me.txtNombre.TabIndex = 1
