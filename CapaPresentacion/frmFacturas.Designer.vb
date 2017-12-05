@@ -308,7 +308,7 @@ Partial Class frmFacturas
         Me.txtIdFactura.Location = New System.Drawing.Point(123, 9)
         Me.txtIdFactura.MaxLength = 5
         Me.txtIdFactura.Name = "txtIdFactura"
-        Me.txtIdFactura.Size = New System.Drawing.Size(61, 20)
+        Me.txtIdFactura.Size = New System.Drawing.Size(70, 20)
         Me.txtIdFactura.TabIndex = 1
         '
         'Label7

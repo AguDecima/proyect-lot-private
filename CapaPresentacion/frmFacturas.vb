@@ -425,4 +425,5 @@ Public Class frmFacturas
         frmSearchServicios.Show()
         DTFechaVencimiento.Value = DTFechaFactura.Value.AddDays(30)
     End Sub
+
 End Class
