@@ -181,6 +181,6 @@ Public Class frmPrincipal
     End Sub
 
     Private Sub AcercaDeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AcercaDeToolStripMenuItem.Click
-        System.Diagnostics.Process.Start("file:///H:/Taller%20de%20Lenguaje%20II/Trabajo%20Final/app%20con%20git/startbootstrap-grayscale-gh-pages/index.html")
+        System.Diagnostics.Process.Start("file:///F:/Taller%20de%20Lenguaje%20II/Trabajo%20Final/app%20con%20git/startbootstrap-grayscale-gh-pages/index.html")
     End Sub
 End Class

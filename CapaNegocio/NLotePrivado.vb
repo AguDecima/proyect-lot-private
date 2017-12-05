@@ -4,11 +4,10 @@ Public Class NLotePrivado
     Public Function insert(lotePrivado As CapaDatos.DLotePrivado)
         Dim cn As New Conexion
         cn.conectar()
-        Dim cadena_insert = "INSERT INTO lote_privado (id_lote_privado,area,precio_alquiler) VALUES (@id,@area,@precio_alquiler)"
+        Dim cadena_insert = "INSERT INTO lote_privado (area,precio_alquiler) VALUES (@area,@precio_alquiler)"
 
         Try
             Dim comando As New MySqlCommand(cadena_insert, cn.MySqlConexion)
-            comando.Parameters.AddWithValue("@id", lotePrivado.IdLotePrivado)
             comando.Parameters.AddWithValue("@area", lotePrivado.Area)
             comando.Parameters.AddWithValue("@precio_alquiler", lotePrivado.PrecioAlquiler)
             comando.ExecuteNonQuery()

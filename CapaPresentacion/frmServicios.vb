@@ -8,7 +8,7 @@
 
     Private Sub btnCrear_Click(sender As Object, e As EventArgs) Handles btnCrear.Click
 
-        If (IsNumeric(txtNroLote.Text) = False Or IsNumeric(txtNroServicio.Text) = False Or
+        If (IsNumeric(txtNroLote.Text) = False Or
             isEmptyCadena(CBNombres.Text) = False Or isEmptyCadena(CBEmpresas.Text) = False Or
             IsNumeric(txtPrecio.Text) = False) Then
             MsgBox("Faltan datos para crear un servicio")
@@ -16,14 +16,13 @@
         End If
 
 
-        NroServicio = CInt(txtNroServicio.Text)
         NroLote = CInt(txtNroLote.Text)
         nombre = CBNombres.Text
         empresa = CBEmpresas.Text
         fechaContratacion = CDate(DTFechaContratacion.Text)
         precio = CDbl(txtPrecio.Text)
 
-        Dim DServicio As New CapaDatos.DServicios(NroServicio, NroLote, nombre, empresa, fechaContratacion, precio)
+        Dim DServicio As New CapaDatos.DServicios(NroLote, nombre, empresa, fechaContratacion, precio)
         Dim NServicio As New CapaNegocio.NServicios()
 
         NServicio.insert(DServicio)
@@ -110,9 +109,9 @@
         datosReserva = NServicio.find()
         DGListaServicios.DataSource = datosReserva
 
-        txtNroLote.Focus()
-
         txtNroLote.Clear()
+
+        DTFechaContratacion.MaxDate = Today
 
     End Sub
 

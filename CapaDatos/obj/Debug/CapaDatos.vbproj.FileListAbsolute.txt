@@ -19,3 +19,12 @@ F:\Taller de Lenguaje II\Trabajo Final\Aplicacion\Barrio Privado\CapaDatos\obj\D
 F:\Taller de Lenguaje II\Trabajo Final\Aplicacion\Barrio Privado\CapaDatos\obj\Debug\CapaDatos.dll
 F:\Taller de Lenguaje II\Trabajo Final\Aplicacion\Barrio Privado\CapaDatos\obj\Debug\CapaDatos.xml
 F:\Taller de Lenguaje II\Trabajo Final\Aplicacion\Barrio Privado\CapaDatos\obj\Debug\CapaDatos.pdb
+F:\Taller de Lenguaje II\Trabajo Final\app con git\Barrio Privado\CapaDatos\bin\Debug\CapaDatos.dll
+F:\Taller de Lenguaje II\Trabajo Final\app con git\Barrio Privado\CapaDatos\bin\Debug\CapaDatos.pdb
+F:\Taller de Lenguaje II\Trabajo Final\app con git\Barrio Privado\CapaDatos\bin\Debug\CapaDatos.xml
+F:\Taller de Lenguaje II\Trabajo Final\app con git\Barrio Privado\CapaDatos\obj\Debug\CapaDatos.vbprojResolveAssemblyReference.cache
+F:\Taller de Lenguaje II\Trabajo Final\app con git\Barrio Privado\CapaDatos\obj\Debug\CapaDatos.Resources.resources
+F:\Taller de Lenguaje II\Trabajo Final\app con git\Barrio Privado\CapaDatos\obj\Debug\CapaDatos.vbproj.GenerateResource.Cache
+F:\Taller de Lenguaje II\Trabajo Final\app con git\Barrio Privado\CapaDatos\obj\Debug\CapaDatos.dll
+F:\Taller de Lenguaje II\Trabajo Final\app con git\Barrio Privado\CapaDatos\obj\Debug\CapaDatos.xml
+F:\Taller de Lenguaje II\Trabajo Final\app con git\Barrio Privado\CapaDatos\obj\Debug\CapaDatos.pdb

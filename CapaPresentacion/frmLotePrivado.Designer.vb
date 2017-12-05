@@ -106,6 +106,7 @@ Partial Class frmLotePrivado
         '
         'txtIdLote
         '
+        Me.txtIdLote.Enabled = False
         Me.txtIdLote.Location = New System.Drawing.Point(95, 11)
         Me.txtIdLote.MaxLength = 5
         Me.txtIdLote.Name = "txtIdLote"

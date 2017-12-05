@@ -18,6 +18,14 @@
         Me.Precio = _precio
     End Sub
 
+    Public Sub New(_idPersona As Integer, _nombre As String, _empresa As String, _fechaContratacion As Date, _precio As Double)
+        Me.IdPersona = _idPersona
+        Me.Nombre = _nombre
+        Me.Empresa = _empresa
+        Me.FechaContratacion = _fechaContratacion
+        Me.Precio = _precio
+    End Sub
+
     Public Property IdServicios As Integer
         Get
             Return _idServicios

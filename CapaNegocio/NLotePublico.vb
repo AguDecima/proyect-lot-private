@@ -5,13 +5,11 @@ Public Class NLotePublico
     Public Function insert(lotePublico As CapaDatos.DLotePublico)
         Dim cn As New Conexion
         cn.conectar()
-        Dim cadena_insert = "INSERT INTO lote_publico (id_lote_publico,nombre,disponible) VALUES (@id,@area,@disponible)"
+        Dim cadena_insert = "INSERT INTO lote_publico (nombre) VALUES (@area)"
 
         Try
             Dim comando As New MySqlCommand(cadena_insert, cn.MySqlConexion)
-            comando.Parameters.AddWithValue("@id", lotePublico.IdLotePublico)
             comando.Parameters.AddWithValue("@area", lotePublico.Nombre)
-            comando.Parameters.AddWithValue("@disponible", lotePublico.Disponible)
             comando.ExecuteNonQuery()
             MsgBox("Lote publico creado")
         Catch ex As Exception
@@ -24,13 +22,12 @@ Public Class NLotePublico
     Public Function update(lotePublico As CapaDatos.DLotePublico)
         Dim cn As New Conexion
         cn.conectar()
-        Dim cadena_update = "UPDATE lote_publico SET nombre = @nombre , disponible = @disponible WHERE id_lote_publico = @id"
+        Dim cadena_update = "UPDATE lote_publico SET nombre = @nombre WHERE id_lote_publico = @id"
 
         Try
             Dim comando As New MySqlCommand(cadena_update, cn.MySqlConexion)
             comando.Parameters.AddWithValue("@id", lotePublico.IdLotePublico)
             comando.Parameters.AddWithValue("@nombre", lotePublico.Nombre)
-            comando.Parameters.AddWithValue("@disponible", lotePublico.Disponible)
             comando.ExecuteNonQuery()
             MsgBox("Lote Publico modificado")
         Catch ex As Exception
@@ -60,7 +57,7 @@ Public Class NLotePublico
     Public Function Find() As DataTable
         Dim cn As New Conexion
         cn.conectar()
-        Dim cadena_find As String = "SELECT id_lote_publico AS 'Nro. de Lote' , nombre AS Nombre , disponible AS Disponibilidad FROM lote_publico"
+        Dim cadena_find As String = "SELECT id_lote_publico AS 'Nro. de Lote' , nombre AS Nombre FROM lote_publico"
 
         Dim comando As New MySqlCommand(cadena_find, cn.MySqlConexion)
         Dim dataAdapter As New MySqlDataAdapter(comando)
@@ -75,7 +72,7 @@ Public Class NLotePublico
     Public Function FindById(lotePublico As CapaDatos.DLotePublico) As DataTable
         Dim cn As New Conexion
         cn.conectar()
-        Dim cadena_find As String = "SELECT id_lote_publico AS 'Nro. de Lote' , nombre AS Nombre , disponible AS Disponibilidad FROM lote_publico WHERE id_lote_publico = @id"
+        Dim cadena_find As String = "SELECT id_lote_publico AS 'Nro. de Lote' , nombre AS Nombre FROM lote_publico WHERE id_lote_publico = @id"
 
         Dim comando As New MySqlCommand(cadena_find, cn.MySqlConexion)
         comando.Parameters.AddWithValue("@id", lotePublico.IdLotePublico)

@@ -25,6 +25,7 @@ Partial Class frmFacturas
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmFacturas))
         Me.TabFacturas = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.btnFechaServicios = New System.Windows.Forms.Button()
         Me.btnPrinter = New System.Windows.Forms.Button()
         Me.btnVerificar = New System.Windows.Forms.Button()
         Me.btnCalcularTotal = New System.Windows.Forms.Button()
@@ -79,6 +80,7 @@ Partial Class frmFacturas
         '
         'TabPage1
         '
+        Me.TabPage1.Controls.Add(Me.btnFechaServicios)
         Me.TabPage1.Controls.Add(Me.btnPrinter)
         Me.TabPage1.Controls.Add(Me.btnVerificar)
         Me.TabPage1.Controls.Add(Me.btnCalcularTotal)
@@ -114,12 +116,21 @@ Partial Class frmFacturas
         Me.TabPage1.Text = "Datos"
         Me.TabPage1.UseVisualStyleBackColor = True
         '
+        'btnFechaServicios
+        '
+        Me.btnFechaServicios.Location = New System.Drawing.Point(371, 38)
+        Me.btnFechaServicios.Name = "btnFechaServicios"
+        Me.btnFechaServicios.Size = New System.Drawing.Size(75, 23)
+        Me.btnFechaServicios.TabIndex = 5
+        Me.btnFechaServicios.Text = "..."
+        Me.btnFechaServicios.UseVisualStyleBackColor = True
+        '
         'btnPrinter
         '
         Me.btnPrinter.Location = New System.Drawing.Point(385, 264)
         Me.btnPrinter.Name = "btnPrinter"
         Me.btnPrinter.Size = New System.Drawing.Size(75, 23)
-        Me.btnPrinter.TabIndex = 25
+        Me.btnPrinter.TabIndex = 16
         Me.btnPrinter.Text = "Imprimir"
         Me.btnPrinter.UseVisualStyleBackColor = True
         '
@@ -128,7 +139,7 @@ Partial Class frmFacturas
         Me.btnVerificar.Location = New System.Drawing.Point(325, 102)
         Me.btnVerificar.Name = "btnVerificar"
         Me.btnVerificar.Size = New System.Drawing.Size(121, 23)
-        Me.btnVerificar.TabIndex = 8
+        Me.btnVerificar.TabIndex = 7
         Me.btnVerificar.Text = "Verificar Bonificacion"
         Me.btnVerificar.UseVisualStyleBackColor = True
         '
@@ -137,7 +148,7 @@ Partial Class frmFacturas
         Me.btnCalcularTotal.Location = New System.Drawing.Point(239, 175)
         Me.btnCalcularTotal.Name = "btnCalcularTotal"
         Me.btnCalcularTotal.Size = New System.Drawing.Size(72, 23)
-        Me.btnCalcularTotal.TabIndex = 7
+        Me.btnCalcularTotal.TabIndex = 10
         Me.btnCalcularTotal.Text = "Calcular"
         Me.btnCalcularTotal.UseVisualStyleBackColor = True
         '
@@ -146,16 +157,17 @@ Partial Class frmFacturas
         Me.btnCalcularPrecioAlquiler.Location = New System.Drawing.Point(239, 104)
         Me.btnCalcularPrecioAlquiler.Name = "btnCalcularPrecioAlquiler"
         Me.btnCalcularPrecioAlquiler.Size = New System.Drawing.Size(72, 23)
-        Me.btnCalcularPrecioAlquiler.TabIndex = 5
+        Me.btnCalcularPrecioAlquiler.TabIndex = 8
         Me.btnCalcularPrecioAlquiler.Text = "Calcular"
         Me.btnCalcularPrecioAlquiler.UseVisualStyleBackColor = True
         '
         'DTFechaVencimiento
         '
+        Me.DTFechaVencimiento.Enabled = False
         Me.DTFechaVencimiento.Location = New System.Drawing.Point(123, 71)
         Me.DTFechaVencimiento.Name = "DTFechaVencimiento"
         Me.DTFechaVencimiento.Size = New System.Drawing.Size(323, 20)
-        Me.DTFechaVencimiento.TabIndex = 4
+        Me.DTFechaVencimiento.TabIndex = 6
         '
         'Label9
         '
@@ -168,10 +180,13 @@ Partial Class frmFacturas
         '
         'DTFechaFactura
         '
+        Me.DTFechaFactura.Enabled = False
         Me.DTFechaFactura.Location = New System.Drawing.Point(123, 38)
+        Me.DTFechaFactura.MaxDate = New Date(2030, 12, 31, 0, 0, 0, 0)
+        Me.DTFechaFactura.MinDate = New Date(2016, 1, 1, 0, 0, 0, 0)
         Me.DTFechaFactura.Name = "DTFechaFactura"
-        Me.DTFechaFactura.Size = New System.Drawing.Size(323, 20)
-        Me.DTFechaFactura.TabIndex = 3
+        Me.DTFechaFactura.Size = New System.Drawing.Size(242, 20)
+        Me.DTFechaFactura.TabIndex = 4
         '
         'Label5
         '
@@ -187,7 +202,7 @@ Partial Class frmFacturas
         Me.btnCalcularExpensas.Location = New System.Drawing.Point(239, 139)
         Me.btnCalcularExpensas.Name = "btnCalcularExpensas"
         Me.btnCalcularExpensas.Size = New System.Drawing.Size(72, 23)
-        Me.btnCalcularExpensas.TabIndex = 6
+        Me.btnCalcularExpensas.TabIndex = 9
         Me.btnCalcularExpensas.Text = "Calcular"
         Me.btnCalcularExpensas.UseVisualStyleBackColor = True
         '
@@ -196,7 +211,7 @@ Partial Class frmFacturas
         Me.btnBorrar.Location = New System.Drawing.Point(290, 264)
         Me.btnBorrar.Name = "btnBorrar"
         Me.btnBorrar.Size = New System.Drawing.Size(75, 23)
-        Me.btnBorrar.TabIndex = 13
+        Me.btnBorrar.TabIndex = 15
         Me.btnBorrar.Text = "Borrar"
         Me.btnBorrar.UseVisualStyleBackColor = True
         '
@@ -205,7 +220,7 @@ Partial Class frmFacturas
         Me.btnEliminar.Location = New System.Drawing.Point(206, 264)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(75, 23)
-        Me.btnEliminar.TabIndex = 12
+        Me.btnEliminar.TabIndex = 14
         Me.btnEliminar.Text = "Eliminar"
         Me.btnEliminar.UseVisualStyleBackColor = True
         '
@@ -214,7 +229,7 @@ Partial Class frmFacturas
         Me.btnModificar.Location = New System.Drawing.Point(109, 264)
         Me.btnModificar.Name = "btnModificar"
         Me.btnModificar.Size = New System.Drawing.Size(75, 23)
-        Me.btnModificar.TabIndex = 11
+        Me.btnModificar.TabIndex = 13
         Me.btnModificar.Text = "Modificar"
         Me.btnModificar.UseVisualStyleBackColor = True
         '
@@ -223,7 +238,7 @@ Partial Class frmFacturas
         Me.btnCrear.Location = New System.Drawing.Point(13, 264)
         Me.btnCrear.Name = "btnCrear"
         Me.btnCrear.Size = New System.Drawing.Size(75, 23)
-        Me.btnCrear.TabIndex = 10
+        Me.btnCrear.TabIndex = 12
         Me.btnCrear.Text = "Crear"
         Me.btnCrear.UseVisualStyleBackColor = True
         '
@@ -232,7 +247,7 @@ Partial Class frmFacturas
         Me.btnIdPersona.Location = New System.Drawing.Point(371, 6)
         Me.btnIdPersona.Name = "btnIdPersona"
         Me.btnIdPersona.Size = New System.Drawing.Size(75, 23)
-        Me.btnIdPersona.TabIndex = 16
+        Me.btnIdPersona.TabIndex = 3
         Me.btnIdPersona.Text = "..."
         Me.btnIdPersona.UseVisualStyleBackColor = True
         '
@@ -254,7 +269,7 @@ Partial Class frmFacturas
         Me.CBCondicion.Location = New System.Drawing.Point(123, 211)
         Me.CBCondicion.Name = "CBCondicion"
         Me.CBCondicion.Size = New System.Drawing.Size(108, 21)
-        Me.CBCondicion.TabIndex = 9
+        Me.CBCondicion.TabIndex = 11
         '
         'txtTotalFactura
         '
@@ -463,4 +478,5 @@ Partial Class frmFacturas
     Friend WithEvents btnCalcularTotal As Button
     Friend WithEvents btnPrinter As Button
     Friend WithEvents PrintDocument1 As Printing.PrintDocument
+    Friend WithEvents btnFechaServicios As Button
 End Class

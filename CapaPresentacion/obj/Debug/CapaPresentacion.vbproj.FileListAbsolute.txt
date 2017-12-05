@@ -106,3 +106,4 @@ H:\Taller de Lenguaje II\Trabajo Final\app con git\Barrio Privado\CapaPresentaci
 H:\Taller de Lenguaje II\Trabajo Final\app con git\Barrio Privado\CapaPresentacion\obj\Debug\CapaPresentacion.exe
 H:\Taller de Lenguaje II\Trabajo Final\app con git\Barrio Privado\CapaPresentacion\obj\Debug\CapaPresentacion.xml
 H:\Taller de Lenguaje II\Trabajo Final\app con git\Barrio Privado\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+F:\Taller de Lenguaje II\Trabajo Final\app con git\Barrio Privado\CapaPresentacion\obj\Debug\CapaPresentacion.frmSearchServicios.resources

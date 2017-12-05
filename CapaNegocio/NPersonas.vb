@@ -5,12 +5,11 @@ Public Class NPersonas
     Public Function insert(personas As CapaDatos.DPersonas)
         Dim cn As New Conexion
         cn.conectar()
-        Dim cadena_insert = "INSERT INTO personas (id_persona,nombre,apellido,fecha_nacimiento,telefono,dni," +
+        Dim cadena_insert = "INSERT INTO personas (nombre,apellido,fecha_nacimiento,telefono,dni," +
             "id_lote_privado,is_propietario,is_habitante) VALUES (@id,@nombre,@apellido,@fecha,@tel,@dni,@id_lote,@prop,@hab)"
 
         Try
             Dim comando As New MySqlCommand(cadena_insert, cn.MySqlConexion)
-            comando.Parameters.AddWithValue("@id", personas.IdPersona)
             comando.Parameters.AddWithValue("@nombre", personas.Nombre)
             comando.Parameters.AddWithValue("@apellido", personas.Apellido)
             comando.Parameters.AddWithValue("@fecha", personas.FechaNacimiento)

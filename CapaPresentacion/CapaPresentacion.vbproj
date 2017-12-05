@@ -90,6 +90,12 @@
     <Compile Include="FormSearch\frmSearchLotePublico.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormSearch\frmSearchServicios.Designer.vb">
+      <DependentUpon>frmSearchServicios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSearch\frmSearchServicios.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmFacturas.Designer.vb">
       <DependentUpon>frmFacturas.vb</DependentUpon>
     </Compile>
@@ -158,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormSearch\frmSearchLotePublico.resx">
       <DependentUpon>frmSearchLotePublico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSearch\frmSearchServicios.resx">
+      <DependentUpon>frmSearchServicios.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFacturas.resx">
       <DependentUpon>frmFacturas.vb</DependentUpon>

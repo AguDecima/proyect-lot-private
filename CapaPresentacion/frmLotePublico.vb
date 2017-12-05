@@ -5,22 +5,15 @@
 
     Private Sub btnCrear_Click(sender As Object, e As EventArgs) Handles btnCrear.Click
 
-        If (IsNumeric(txtIdLote.Text) = False Or isEmptyCadena(txtNombreLote.Text) = False Or
-            isEmptyCadena(CBDisponible.Text) = False) Then
+        If isEmptyCadena(txtNombreLote.Text) = False Then
             MsgBox("Faltan datos para crear un Lote Publico")
             Exit Sub
         End If
 
-
-        id = CInt(txtIdLote.Text)
         nombre = txtNombreLote.Text
-        If CBDisponible.Text = "Disponible" Then
-            disponible = True
-        Else
-            disponible = False
-        End If
 
-        Dim CLote As New CapaDatos.DLotePublico(id, nombre, disponible)
+        Dim CLote As New CapaDatos.DLotePublico()
+        CLote.Nombre = nombre
         Dim NLote As New CapaNegocio.NLotePublico()
 
         NLote.insert(CLote)
@@ -28,27 +21,22 @@
         'limpio los controlea
         txtIdLote.Clear()
         txtNombreLote.Clear()
-        CBDisponible.ResetText()
         txtIdLote.Focus()
     End Sub
 
     Private Sub btnModificar_Click(sender As Object, e As EventArgs) Handles btnModificar.Click
 
-        If (IsNumeric(txtIdLote.Text) = False Or isEmptyCadena(txtNombreLote.Text) = False Or
-            isEmptyCadena(CBDisponible.Text) = False) Then
-            MsgBox("Faltan datos para modificar un Lote Publico")
+        If IsNumeric(txtIdLote.Text) = False Or isEmptyCadena(txtNombreLote.Text) = False Then
+            MsgBox("Faltan datos para crear un Lote Publico")
             Exit Sub
         End If
 
         id = CInt(txtIdLote.Text)
         nombre = txtNombreLote.Text
-        If CBDisponible.Text = "Disponible" Then
-            disponible = True
-        Else
-            disponible = False
-        End If
 
-        Dim CLote As New CapaDatos.DLotePublico(id, nombre, disponible)
+        Dim CLote As New CapaDatos.DLotePublico()
+        CLote.IdLotePublico = id
+        CLote.Nombre = nombre
         Dim NLote As New CapaNegocio.NLotePublico()
 
         NLote.update(CLote)
@@ -56,7 +44,6 @@
         'limpio los controlea
         txtIdLote.Clear()
         txtNombreLote.Clear()
-        CBDisponible.ResetText()
         txtIdLote.Focus()
     End Sub
 
@@ -92,7 +79,6 @@
     Private Sub btnBorrar_Click(sender As Object, e As EventArgs) Handles btnBorrar.Click
         txtIdLote.Clear()
         txtNombreLote.Clear()
-        CBDisponible.ResetText()
         txtIdLote.Focus()
     End Sub
 
@@ -145,7 +131,6 @@
         'limpio los controlea
         txtIdLote.Clear()
         txtNombreLote.Clear()
-        CBDisponible.ResetText()
         txtIdLote.Focus()
 
     End Sub

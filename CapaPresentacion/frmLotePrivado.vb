@@ -5,16 +5,17 @@
 
     Private Sub btnCrear_Click(sender As Object, e As EventArgs) Handles btnCrear.Click
 
-        If IsNumeric(txtIdLote.Text) = False Or IsNumeric(txtAreaLote.Text) = False Or IsNumeric(txtPrecio.Text) = False Then
+        If IsNumeric(txtAreaLote.Text) = False Or IsNumeric(txtPrecio.Text) = False Then
             MsgBox("Faltan datos para poder crear el lote")
             Exit Sub
         End If
 
-        id = CInt(txtIdLote.Text)
         area = CDbl(txtAreaLote.Text)
         precio = CDbl(txtPrecio.Text)
 
-        Dim lotePrivado As New CapaDatos.DLotePrivado(id, area, precio)
+        Dim lotePrivado As New CapaDatos.DLotePrivado()
+        lotePrivado.Area = area
+        lotePrivado.PrecioAlquiler = precio
         Dim Nlote As New CapaNegocio.NLotePrivado
 
         Nlote.insert(lotePrivado)
@@ -26,9 +27,6 @@
         txtIdLote.Focus()
     End Sub
 
-    Sub ConfigurarDGV()
-
-    End Sub
 
     Private Sub btnModificar_Click(sender As Object, e As EventArgs) Handles btnModificar.Click
 
@@ -41,8 +39,10 @@
         area = CDbl(txtAreaLote.Text)
         precio = CDbl(txtPrecio.Text)
 
-
-        Dim lotePrivado As New CapaDatos.DLotePrivado(id, area, precio)
+        Dim lotePrivado As New CapaDatos.DLotePrivado()
+        lotePrivado.IdLotePrivado = id
+        lotePrivado.Area = area
+        lotePrivado.PrecioAlquiler = precio
         Dim Nlote As New CapaNegocio.NLotePrivado
 
         Nlote.update(lotePrivado)

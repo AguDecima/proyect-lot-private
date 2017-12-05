@@ -95,6 +95,7 @@ Partial Class frmServicios
         '
         'txtNroServicio
         '
+        Me.txtNroServicio.Enabled = False
         Me.txtNroServicio.Location = New System.Drawing.Point(87, 17)
         Me.txtNroServicio.MaxLength = 5
         Me.txtNroServicio.Name = "txtNroServicio"
@@ -141,6 +142,7 @@ Partial Class frmServicios
         '
         'DTFechaContratacion
         '
+        Me.DTFechaContratacion.Enabled = False
         Me.DTFechaContratacion.Location = New System.Drawing.Point(87, 100)
         Me.DTFechaContratacion.Name = "DTFechaContratacion"
         Me.DTFechaContratacion.Size = New System.Drawing.Size(323, 20)

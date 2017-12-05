@@ -11,14 +11,13 @@
 
     Private Sub btnCrear_Click(sender As Object, e As EventArgs) Handles btnCrear.Click
 
-        If (IsNumeric(txtIdPersona.Text) = False Or isEmptyCadena(txtNombre.Text) = False Or
+        If (isEmptyCadena(txtNombre.Text) = False Or
             isEmptyCadena(txtApellido.Text) = False Or IsNumeric(txtTelefono.Text) = False Or
             IsNumeric(txtDni.Text) = False Or IsNumeric(txtNroLote.Text) = False) Then
             MsgBox("Faltan datos para poder crear una persona")
             Exit Sub
         End If
 
-        id = CInt(txtIdPersona.Text)
         nombre = txtNombre.Text
         apellido = txtApellido.Text
         telefono = txtTelefono.Text
@@ -33,7 +32,7 @@
             is_propietario = True
         End If
 
-        Dim DPersonas As New CapaDatos.DPersonas(id, nombre, apellido, fecha_nacimineto, dni, telefono,
+        Dim DPersonas As New CapaDatos.DPersonas(nombre, apellido, fecha_nacimineto, dni, telefono,
                                                  id_lote, is_propietario, is_habitante)
         Dim NPersonas As New CapaNegocio.NPersonas
 
@@ -46,8 +45,8 @@
         txtTelefono.Clear()
         txtDni.Clear()
         txtNroLote.Clear()
-        cbHabitante.ResetText()
-        cbPropietario.ResetText()
+        cbHabitante.Checked = False
+        cbPropietario.Checked = False
         txtNroLote.Focus()
 
     End Sub
@@ -89,8 +88,8 @@
         txtTelefono.Clear()
         txtDni.Clear()
         txtNroLote.Clear()
-        cbHabitante.ResetText()
-        cbPropietario.ResetText()
+        cbHabitante.Checked = False
+        cbPropietario.Checked = False
         txtNroLote.Focus()
     End Sub
 
@@ -320,8 +319,8 @@
         txtTelefono.Clear()
         txtDni.Clear()
         txtNroLote.Clear()
-        cbHabitante.ResetText()
-        cbPropietario.ResetText()
+        cbHabitante.Checked = False
+        cbPropietario.Checked = False
         txtNroLote.Focus()
 
     End Sub

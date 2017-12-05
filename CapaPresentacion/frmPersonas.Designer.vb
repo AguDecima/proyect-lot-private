@@ -135,6 +135,7 @@ Partial Class frmPersonas
         '
         'txtIdPersona
         '
+        Me.txtIdPersona.Enabled = False
         Me.txtIdPersona.Location = New System.Drawing.Point(307, 9)
         Me.txtIdPersona.MaxLength = 5
         Me.txtIdPersona.Name = "txtIdPersona"

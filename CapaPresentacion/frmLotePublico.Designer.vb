@@ -25,8 +25,6 @@ Partial Class frmLotePublico
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmLotePublico))
         Me.TabLotePublico = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.CBDisponible = New System.Windows.Forms.ComboBox()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.txtNombreLote = New System.Windows.Forms.TextBox()
         Me.txtIdLote = New System.Windows.Forms.TextBox()
         Me.btnBorrar = New System.Windows.Forms.Button()
@@ -56,13 +54,11 @@ Partial Class frmLotePublico
         Me.TabLotePublico.Location = New System.Drawing.Point(12, 12)
         Me.TabLotePublico.Name = "TabLotePublico"
         Me.TabLotePublico.SelectedIndex = 0
-        Me.TabLotePublico.Size = New System.Drawing.Size(357, 209)
+        Me.TabLotePublico.Size = New System.Drawing.Size(357, 173)
         Me.TabLotePublico.TabIndex = 1
         '
         'TabPage1
         '
-        Me.TabPage1.Controls.Add(Me.CBDisponible)
-        Me.TabPage1.Controls.Add(Me.Label3)
         Me.TabPage1.Controls.Add(Me.txtNombreLote)
         Me.TabPage1.Controls.Add(Me.txtIdLote)
         Me.TabPage1.Controls.Add(Me.btnBorrar)
@@ -74,33 +70,14 @@ Partial Class frmLotePublico
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(349, 183)
+        Me.TabPage1.Size = New System.Drawing.Size(349, 147)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Datos"
         Me.TabPage1.UseVisualStyleBackColor = True
         '
-        'CBDisponible
-        '
-        Me.CBDisponible.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CBDisponible.FormattingEnabled = True
-        Me.CBDisponible.Items.AddRange(New Object() {"Disponible", "No Disponible"})
-        Me.CBDisponible.Location = New System.Drawing.Point(94, 89)
-        Me.CBDisponible.Name = "CBDisponible"
-        Me.CBDisponible.Size = New System.Drawing.Size(240, 21)
-        Me.CBDisponible.TabIndex = 3
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(10, 98)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(78, 13)
-        Me.Label3.TabIndex = 8
-        Me.Label3.Text = "Disponibilidad :"
-        '
         'txtNombreLote
         '
-        Me.txtNombreLote.Location = New System.Drawing.Point(95, 47)
+        Me.txtNombreLote.Location = New System.Drawing.Point(95, 46)
         Me.txtNombreLote.MaxLength = 30
         Me.txtNombreLote.Name = "txtNombreLote"
         Me.txtNombreLote.Size = New System.Drawing.Size(239, 20)
@@ -108,6 +85,7 @@ Partial Class frmLotePublico
         '
         'txtIdLote
         '
+        Me.txtIdLote.Enabled = False
         Me.txtIdLote.Location = New System.Drawing.Point(95, 11)
         Me.txtIdLote.MaxLength = 5
         Me.txtIdLote.Name = "txtIdLote"
@@ -116,7 +94,7 @@ Partial Class frmLotePublico
         '
         'btnBorrar
         '
-        Me.btnBorrar.Location = New System.Drawing.Point(258, 135)
+        Me.btnBorrar.Location = New System.Drawing.Point(259, 97)
         Me.btnBorrar.Name = "btnBorrar"
         Me.btnBorrar.Size = New System.Drawing.Size(75, 23)
         Me.btnBorrar.TabIndex = 7
@@ -125,7 +103,7 @@ Partial Class frmLotePublico
         '
         'btnEliminar
         '
-        Me.btnEliminar.Location = New System.Drawing.Point(176, 135)
+        Me.btnEliminar.Location = New System.Drawing.Point(177, 97)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(75, 23)
         Me.btnEliminar.TabIndex = 6
@@ -134,7 +112,7 @@ Partial Class frmLotePublico
         '
         'btnModificar
         '
-        Me.btnModificar.Location = New System.Drawing.Point(94, 135)
+        Me.btnModificar.Location = New System.Drawing.Point(95, 97)
         Me.btnModificar.Name = "btnModificar"
         Me.btnModificar.Size = New System.Drawing.Size(75, 23)
         Me.btnModificar.TabIndex = 5
@@ -143,7 +121,7 @@ Partial Class frmLotePublico
         '
         'btnCrear
         '
-        Me.btnCrear.Location = New System.Drawing.Point(12, 135)
+        Me.btnCrear.Location = New System.Drawing.Point(13, 97)
         Me.btnCrear.Name = "btnCrear"
         Me.btnCrear.Size = New System.Drawing.Size(75, 23)
         Me.btnCrear.TabIndex = 4
@@ -153,7 +131,7 @@ Partial Class frmLotePublico
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(10, 54)
+        Me.Label2.Location = New System.Drawing.Point(10, 53)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(50, 13)
         Me.Label2.TabIndex = 1
@@ -177,7 +155,7 @@ Partial Class frmLotePublico
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(349, 183)
+        Me.TabPage2.Size = New System.Drawing.Size(349, 147)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Listado"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -185,7 +163,7 @@ Partial Class frmLotePublico
         'btnActualizar
         '
         Me.btnActualizar.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.btnActualizar.Location = New System.Drawing.Point(187, 4)
+        Me.btnActualizar.Location = New System.Drawing.Point(188, 6)
         Me.btnActualizar.Name = "btnActualizar"
         Me.btnActualizar.Size = New System.Drawing.Size(75, 23)
         Me.btnActualizar.TabIndex = 2
@@ -205,13 +183,13 @@ Partial Class frmLotePublico
         Me.DGListaLotesPublicos.MultiSelect = False
         Me.DGListaLotesPublicos.Name = "DGListaLotesPublicos"
         Me.DGListaLotesPublicos.ReadOnly = True
-        Me.DGListaLotesPublicos.Size = New System.Drawing.Size(336, 144)
+        Me.DGListaLotesPublicos.Size = New System.Drawing.Size(336, 108)
         Me.DGListaLotesPublicos.TabIndex = 9
         '
         'btnBuscar
         '
         Me.btnBuscar.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.btnBuscar.Location = New System.Drawing.Point(268, 3)
+        Me.btnBuscar.Location = New System.Drawing.Point(268, 6)
         Me.btnBuscar.Name = "btnBuscar"
         Me.btnBuscar.Size = New System.Drawing.Size(75, 23)
         Me.btnBuscar.TabIndex = 3
@@ -221,7 +199,7 @@ Partial Class frmLotePublico
         'txtBuscar
         '
         Me.txtBuscar.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtBuscar.Location = New System.Drawing.Point(6, 6)
+        Me.txtBuscar.Location = New System.Drawing.Point(7, 6)
         Me.txtBuscar.MaxLength = 5
         Me.txtBuscar.Name = "txtBuscar"
         Me.txtBuscar.Size = New System.Drawing.Size(175, 20)
@@ -231,7 +209,7 @@ Partial Class frmLotePublico
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(383, 224)
+        Me.ClientSize = New System.Drawing.Size(383, 197)
         Me.Controls.Add(Me.TabLotePublico)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
@@ -250,8 +228,6 @@ Partial Class frmLotePublico
 
     Friend WithEvents TabLotePublico As TabControl
     Friend WithEvents TabPage1 As TabPage
-    Friend WithEvents CBDisponible As ComboBox
-    Friend WithEvents Label3 As Label
     Friend WithEvents txtNombreLote As TextBox
     Friend WithEvents txtIdLote As TextBox
     Friend WithEvents btnBorrar As Button

@@ -421,7 +421,8 @@ Public Class frmFacturas
         Return True
     End Function
 
-
-
-
+    Private Sub btnFechaServicios_Click(sender As Object, e As EventArgs) Handles btnFechaServicios.Click
+        frmSearchServicios.Show()
+        DTFechaVencimiento.Value = DTFechaFactura.Value.AddDays(30)
+    End Sub
 End Class

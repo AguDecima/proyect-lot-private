@@ -26,6 +26,19 @@
         Me.IsHabitante = _isHabitante
     End Sub
 
+    Public Sub New(_nombre As String, _apellido As String, _fechaNacimiento As Date,
+                   _dni As String, _telefono As String, _idLotePrivado As Integer, _isPropietario As Boolean,
+                   _isHabitante As Boolean)
+        Me.Nombre = _nombre
+        Me.Apellido = _apellido
+        Me.FechaNacimiento = _fechaNacimiento
+        Me.Dni = _dni
+        Me.Telefono = _telefono
+        Me.IdLotePrivado = _idLotePrivado
+        Me.IsPropietario = _isPropietario
+        Me.IsHabitante = _isHabitante
+    End Sub
+
     Public Property IdPersona As Integer
         Get
             Return _idPersona
