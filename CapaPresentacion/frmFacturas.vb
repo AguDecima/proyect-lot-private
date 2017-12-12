@@ -263,6 +263,9 @@ Public Class frmFacturas
         dataFactura = NFactura.findById(DFactura)
 
         DGListaFacturas.DataSource = dataFactura
+
+        txtBuscar.Clear()
+
     End Sub
 
     Private Sub btnBorrar_Click(sender As Object, e As EventArgs) Handles btnBorrar.Click
@@ -313,6 +316,8 @@ Public Class frmFacturas
     End Sub
 
     Private Sub DGListaFacturas_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGListaFacturas.CellDoubleClick
+        Dim aplica, adeuda As Integer
+
         txtIdFactura.Text = Convert.ToString(DGListaFacturas.CurrentRow.Cells(0).Value)
         txtIdPersona.Text = Convert.ToString(DGListaFacturas.CurrentRow.Cells(1).Value)
         txtPrecioAlquiler.Text = Convert.ToString(DGListaFacturas.CurrentRow.Cells(2).Value)
@@ -320,6 +325,23 @@ Public Class frmFacturas
         txtTotalFactura.Text = Convert.ToString(DGListaFacturas.CurrentRow.Cells(4).Value)
         DTFechaFactura.Text = Convert.ToString(DGListaFacturas.CurrentRow.Cells(5).Value)
         DTFechaVencimiento.Text = Convert.ToString(DGListaFacturas.CurrentRow.Cells(7).Value)
+        aplica = Convert.ToInt16(DGListaFacturas.CurrentRow.Cells(6).Value)
+        adeuda = Convert.ToInt16(DGListaFacturas.CurrentRow.Cells(8).Value)
+
+        If adeuda = 0 Then
+            CBCondicion.Text = "Adeuda"
+        Else
+            CBCondicion.Text = "Pagado"
+        End If
+
+        If aplica = 0 Then
+            lblBonificacion.Text = "NO APLICA"
+        Else
+            lblBonificacion.Text = "APLICA"
+        End If
+
+        Dim tb As TabPage = TabFacturas.TabPages(0)
+        TabFacturas.SelectedTab = tb
 
     End Sub
 

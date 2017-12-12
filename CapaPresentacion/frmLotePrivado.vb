@@ -109,6 +109,8 @@
         datosLotes = NLote.findById(DLote)
         DGListaLotesPrivados.DataSource = datosLotes
 
+        txtBuscar.Clear()
+
     End Sub
 
 

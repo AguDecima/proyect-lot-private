@@ -46,13 +46,13 @@ Partial Class frmPrincipal
         Me.FacturasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FacturasToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ListaFacturasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AcercaDeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
-        Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
         Me.SuspendLayout()
@@ -181,14 +181,20 @@ Partial Class frmPrincipal
         'FacturasToolStripMenuItem1
         '
         Me.FacturasToolStripMenuItem1.Name = "FacturasToolStripMenuItem1"
-        Me.FacturasToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.FacturasToolStripMenuItem1.Size = New System.Drawing.Size(145, 22)
         Me.FacturasToolStripMenuItem1.Text = "Crear Factura"
         '
         'ListaFacturasToolStripMenuItem
         '
         Me.ListaFacturasToolStripMenuItem.Name = "ListaFacturasToolStripMenuItem"
-        Me.ListaFacturasToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ListaFacturasToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
         Me.ListaFacturasToolStripMenuItem.Text = "Lista Facturas"
+        '
+        'ReportesToolStripMenuItem
+        '
+        Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
+        Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
+        Me.ReportesToolStripMenuItem.Text = "Reportes"
         '
         'SalirToolStripMenuItem
         '
@@ -224,12 +230,6 @@ Partial Class frmPrincipal
         Me.ToolStripStatusLabel.Size = New System.Drawing.Size(42, 17)
         Me.ToolStripStatusLabel.Text = "Estado"
         '
-        'ReportesToolStripMenuItem
-        '
-        Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
-        Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.ReportesToolStripMenuItem.Text = "Reportes"
-        '
         'frmPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -244,7 +244,7 @@ Partial Class frmPrincipal
         Me.MaximizeBox = False
         Me.Name = "frmPrincipal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Barrio Privado ""Nombre"""
+        Me.Text = "Barrio Privado - Las Rosas"
         Me.MenuStrip.ResumeLayout(False)
         Me.MenuStrip.PerformLayout()
         Me.StatusStrip.ResumeLayout(False)

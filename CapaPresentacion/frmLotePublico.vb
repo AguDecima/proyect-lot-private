@@ -74,6 +74,8 @@
 
         DGListaLotesPublicos.DataSource = datosLote
 
+        txtBuscar.Clear()
+
     End Sub
 
     Private Sub btnBorrar_Click(sender As Object, e As EventArgs) Handles btnBorrar.Click

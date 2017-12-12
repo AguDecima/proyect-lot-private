@@ -148,6 +148,9 @@
 
         datosHabLotes = NPersonas.findByIdHabitantesForLotes(CPersona)
         HabitantesLotes.DataSource = datosHabLotes
+
+        txtBuscarHabForLote.Clear()
+
     End Sub
 
     Private Sub btnBuscarHabitantes_Click(sender As Object, e As EventArgs) Handles btnBuscarHabitantes.Click
@@ -168,6 +171,8 @@
         datosHabLotes = NPersonas.findByIdHabitantes(CPersona)
         ListaHabitantes.DataSource = datosHabLotes
 
+        txtBuscarHabitantes.Clear()
+
     End Sub
 
     Private Sub btnBuscarPropietarios_Click(sender As Object, e As EventArgs) Handles btnBuscarPropietarios.Click
@@ -187,6 +192,8 @@
 
         datosHabLotes = NPersonas.findByIdPropietarios(CPersona)
         ListaPropietarios.DataSource = datosHabLotes
+
+        txtBuscarPropietarios.Clear()
     End Sub
 
 
@@ -329,11 +336,34 @@
         txtIdPersona.Text = Convert.ToString(ListaHabitantes.CurrentRow.Cells(0).Value)
         txtNombre.Text = Convert.ToString(ListaHabitantes.CurrentRow.Cells(1).Value)
         txtApellido.Text = Convert.ToString(ListaHabitantes.CurrentRow.Cells(2).Value)
-        txtTelefono.Text = Convert.ToString(ListaHabitantes.CurrentRow.Cells(3).Value)
-        txtNroLote.Text = Convert.ToString(ListaHabitantes.CurrentRow.Cells(4).Value)
+        txtTelefono.Text = Convert.ToString(ListaHabitantes.CurrentRow.Cells(4).Value)
+        txtNroLote.Text = Convert.ToString(ListaHabitantes.CurrentRow.Cells(6).Value)
+        DTFechaNacimiento.Text = Convert.ToString(ListaHabitantes.CurrentRow.Cells(5).Value)
+        txtDni.Text = Convert.ToString(ListaHabitantes.CurrentRow.Cells(3).Value)
+        cbHabitante.Checked = True
+
+        Dim tb As TabPage = TabPersonas.TabPages(0)
+        TabPersonas.SelectedTab = tb
+
+
     End Sub
 
     Private Sub btnNroLote_Click(sender As Object, e As EventArgs) Handles btnNroLote.Click
         frmSearchLote.Show()
     End Sub
+
+    Private Sub ListaPropietarios_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles ListaPropietarios.CellDoubleClick
+        txtIdPersona.Text = Convert.ToString(ListaHabitantes.CurrentRow.Cells(0).Value)
+        txtNombre.Text = Convert.ToString(ListaHabitantes.CurrentRow.Cells(1).Value)
+        txtApellido.Text = Convert.ToString(ListaHabitantes.CurrentRow.Cells(2).Value)
+        txtTelefono.Text = Convert.ToString(ListaHabitantes.CurrentRow.Cells(4).Value)
+        txtNroLote.Text = Convert.ToString(ListaHabitantes.CurrentRow.Cells(6).Value)
+        DTFechaNacimiento.Text = Convert.ToString(ListaHabitantes.CurrentRow.Cells(5).Value)
+        txtDni.Text = Convert.ToString(ListaHabitantes.CurrentRow.Cells(3).Value)
+        cbPropietario.Checked = True
+
+        Dim tb As TabPage = TabPersonas.TabPages(0)
+        TabPersonas.SelectedTab = tb
+    End Sub
+
 End Class

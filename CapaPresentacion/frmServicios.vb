@@ -100,6 +100,7 @@
         CBEmpresas.ResetText()
         txtPrecio.Clear()
         txtNroServicio.Focus()
+        DTFechaContratacion.Text = Today
     End Sub
 
     Private Sub frmServicios_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -139,6 +140,9 @@
 
         datosReserva = NServicio.findById(DServicio)
         DGListaServicios.DataSource = datosReserva
+
+        txtBuscar.Clear()
+
     End Sub
 
     Private Sub txtNroServicio_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtNroServicio.KeyPress
@@ -191,8 +195,13 @@
         txtNroServicio.Text = Convert.ToString(DGListaServicios.CurrentRow.Cells(0).Value)
         txtNroLote.Text = Convert.ToString(DGListaServicios.CurrentRow.Cells(1).Value)
         CBNombres.Text = Convert.ToString(DGListaServicios.CurrentRow.Cells(2).Value)
-        DTFechaContratacion.Text = Convert.ToString(DGListaServicios.CurrentRow.Cells(3).Value)
-        txtPrecio.Text = Convert.ToString(DGListaServicios.CurrentRow.Cells(4).Value)
+        CBEmpresas.Text = Convert.ToString(DGListaServicios.CurrentRow.Cells(3).Value)
+        DTFechaContratacion.Text = Convert.ToString(DGListaServicios.CurrentRow.Cells(4).Value)
+        txtPrecio.Text = Convert.ToString(DGListaServicios.CurrentRow.Cells(5).Value)
+
+        Dim tb As TabPage = TabServicios.TabPages(0)
+        TabServicios.SelectedTab = tb
+
     End Sub
 
     Private Sub btnNroLote_Click(sender As Object, e As EventArgs) Handles btnNroLote.Click

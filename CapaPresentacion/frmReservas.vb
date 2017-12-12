@@ -103,6 +103,7 @@
         txtPrecio.Clear()
         txtLotePublico.Clear()
         txtIdHabitante.Focus()
+        DTFechaContratacion.Text = Today
     End Sub
 
     Private Sub frmReservas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -116,6 +117,8 @@
 
         txtIdHabitante.Clear()
         txtLotePublico.Clear()
+
+        DTFechaContratacion.MinDate = Today
 
     End Sub
 
@@ -144,6 +147,9 @@
 
         datosReserva = NReserva.findById(CReserva)
         DGListaReservas.DataSource = datosReserva
+
+        txtBuscar.Clear()
+
     End Sub
 
     Private Sub txtIdHabitante_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtIdHabitante.KeyPress
@@ -198,6 +204,10 @@
         DTFechaVencimiento.Text = Convert.ToString(DGListaReservas.CurrentRow.Cells(3).Value)
         txtPrecio.Text = Convert.ToString(DGListaReservas.CurrentRow.Cells(4).Value)
         txtLotePublico.Text = Convert.ToString(DGListaReservas.CurrentRow.Cells(5).Value)
+
+        Dim tb As TabPage = TabReservas.TabPages(0)
+        TabReservas.SelectedTab = tb
+
     End Sub
 
     Private Sub btnIdHabitante_Click(sender As Object, e As EventArgs) Handles btnIdHabitante.Click

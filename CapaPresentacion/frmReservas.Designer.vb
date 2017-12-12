@@ -144,6 +144,7 @@ Partial Class frmReservas
         '
         'DTFechaContratacion
         '
+        Me.DTFechaContratacion.Enabled = False
         Me.DTFechaContratacion.Location = New System.Drawing.Point(118, 42)
         Me.DTFechaContratacion.Name = "DTFechaContratacion"
         Me.DTFechaContratacion.Size = New System.Drawing.Size(230, 20)

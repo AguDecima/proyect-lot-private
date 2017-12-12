@@ -70,7 +70,7 @@ Public Class NServicios
     Public Function find() As DataTable
         Dim cn As New Conexion
         cn.conectar()
-        Dim cadena_find As String = "SELECT id_servicio AS 'Nro de Servicio', id_persona AS 'Nro de Persona', nombre AS 'Servicio'," +
+        Dim cadena_find As String = "SELECT id_servicio AS 'Nro de Servicio', id_persona AS 'Nro de Persona', nombre AS 'Servicio', empresa AS Empresa," +
             " fecha_contratacion AS 'Fecha Contratacion', monto AS Precio FROM servicio"
 
         Dim comando As New MySqlCommand(cadena_find, cn.MySqlConexion)
@@ -86,7 +86,7 @@ Public Class NServicios
     Public Function findById(servicio As CapaDatos.DServicios) As DataTable
         Dim cn As New Conexion
         cn.conectar()
-        Dim cadena_find As String = "SELECT id_servicio AS 'Nro de Servicio', id_persona AS 'Nro de Persona', nombre AS 'Servicio'," +
+        Dim cadena_find As String = "SELECT id_servicio AS 'Nro de Servicio', id_persona AS 'Nro de Persona', nombre AS 'Servicio', empresa AS Empresa" +
             " fecha_contratacion AS 'Fecha Contratacion', monto AS Precio FROM servicio WHERE id_servicio = @id_servicio"
 
         Dim comando As New MySqlCommand(cadena_find, cn.MySqlConexion)
