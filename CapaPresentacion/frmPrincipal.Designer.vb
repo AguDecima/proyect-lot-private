@@ -52,6 +52,7 @@ Partial Class frmPrincipal
         Me.StatusStrip = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
         Me.SuspendLayout()
@@ -161,18 +162,18 @@ Partial Class frmPrincipal
         'NuevaReservaToolStripMenuItem
         '
         Me.NuevaReservaToolStripMenuItem.Name = "NuevaReservaToolStripMenuItem"
-        Me.NuevaReservaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.NuevaReservaToolStripMenuItem.Size = New System.Drawing.Size(151, 22)
         Me.NuevaReservaToolStripMenuItem.Text = "Nueva Reserva"
         '
         'ListaReservasToolStripMenuItem
         '
         Me.ListaReservasToolStripMenuItem.Name = "ListaReservasToolStripMenuItem"
-        Me.ListaReservasToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ListaReservasToolStripMenuItem.Size = New System.Drawing.Size(151, 22)
         Me.ListaReservasToolStripMenuItem.Text = "Lista Reservas"
         '
         'FacturasToolStripMenuItem
         '
-        Me.FacturasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FacturasToolStripMenuItem1, Me.ListaFacturasToolStripMenuItem})
+        Me.FacturasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FacturasToolStripMenuItem1, Me.ListaFacturasToolStripMenuItem, Me.ReportesToolStripMenuItem})
         Me.FacturasToolStripMenuItem.Name = "FacturasToolStripMenuItem"
         Me.FacturasToolStripMenuItem.Size = New System.Drawing.Size(63, 20)
         Me.FacturasToolStripMenuItem.Text = "Facturas"
@@ -199,13 +200,13 @@ Partial Class frmPrincipal
         'AcercaDeToolStripMenuItem
         '
         Me.AcercaDeToolStripMenuItem.Name = "AcercaDeToolStripMenuItem"
-        Me.AcercaDeToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AcercaDeToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
         Me.AcercaDeToolStripMenuItem.Text = "Acerca de..."
         '
         'SalirToolStripMenuItem1
         '
         Me.SalirToolStripMenuItem1.Name = "SalirToolStripMenuItem1"
-        Me.SalirToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.SalirToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
         Me.SalirToolStripMenuItem1.Text = "Salir"
         '
         'StatusStrip
@@ -222,6 +223,12 @@ Partial Class frmPrincipal
         Me.ToolStripStatusLabel.Name = "ToolStripStatusLabel"
         Me.ToolStripStatusLabel.Size = New System.Drawing.Size(42, 17)
         Me.ToolStripStatusLabel.Text = "Estado"
+        '
+        'ReportesToolStripMenuItem
+        '
+        Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
+        Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ReportesToolStripMenuItem.Text = "Reportes"
         '
         'frmPrincipal
         '
@@ -273,4 +280,5 @@ Partial Class frmPrincipal
     Friend WithEvents FacturasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents FacturasToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents ListaFacturasToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ReportesToolStripMenuItem As ToolStripMenuItem
 End Class

@@ -180,7 +180,7 @@ Public Class NFacturas
     End Function
 
     'metodo para buscar una factura por su numero
-    Public Function findById(factura As CapaDatos.DFacturas)
+    Public Function findById(factura As CapaDatos.DFacturas) As DataTable
         Dim cn As New Conexion
         cn.conectar()
         Dim cadena_find As String = "SELECT id_facturas AS 'Nro Factura', id_persona AS 'Nro Persona', total_pagar AS 'Monto Total'," +
@@ -194,6 +194,23 @@ Public Class NFacturas
         dataAdapter.Fill(dataTable)
 
         Return dataTable
+    End Function
+
+    'metodo para los reportes
+    Public Function findByIdReportes(factura As CapaDatos.DFacturas) As DataSet
+        Dim cn As New Conexion
+        cn.conectar()
+        Dim cadena_find As String = "SELECT id_persona AS 'Nro Persona', precio_alquiler AS 'Precio Alquiler'," +
+            "precio_expensas AS 'Precio Expensas', total_pagar AS 'Monto Total', fecha_vencimiento AS 'Fecha Vencimiento' FROM facturas WHERE id_facturas = @id_factura"
+
+        Dim comando As New MySqlCommand(cadena_find, cn.MySqlConexion)
+        comando.Parameters.AddWithValue("@id_factura", factura.IdFacturas)
+
+        Dim dataAdapter As New MySqlDataAdapter(comando)
+        Dim dataSet As New DataSet
+        dataAdapter.Fill(dataSet)
+
+        Return dataSet
     End Function
 
 End Class

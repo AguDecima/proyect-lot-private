@@ -1,5 +1,6 @@
 ﻿
 Imports System.Drawing.Printing
+Imports Microsoft.Reporting.WinForms
 
 Public Class frmFacturas
 
@@ -325,6 +326,7 @@ Public Class frmFacturas
 
     Private Sub btnPrinter_Click_1(sender As Object, e As EventArgs) Handles btnPrinter.Click
 
+
         If (IsNumeric(txtIdFactura.Text) = False Or IsNumeric(txtIdPersona.Text) = False Or
             IsNumeric(txtPrecioAlquiler.Text) = False Or IsNumeric(txtPrecioExpensas.Text) = False Or
             isEmptyCadena(CBCondicion.Text) = False) Then
@@ -354,24 +356,27 @@ Public Class frmFacturas
             boni = lblBonificacion.Text
             condicion = CBCondicion.Text
 
+            Dim idFactura As New ReportParameter("idFactura", nroFactura)
+            Dim idPersona As New ReportParameter("idPersona", nroPersona)
+            Dim PrecioExpensa As New ReportParameter("PrecioExpensa", precioExp)
+            Dim PrecioAlquiler As New ReportParameter("PrecioAlquiler", precioAlq)
+            Dim Bonificacion As New ReportParameter("Bonificacion", boni)
+            Dim FechaVencimiento As New ReportParameter("FechaVencimiento", fechaVen)
+            Dim Tot As New ReportParameter("Total", total)
 
 
-            text_factura = text_factura + ("FACTURA NRO: " + nroFactura + vbCrLf)
-            text_factura = text_factura + ("---------------------------" + vbCrLf)
-            text_factura = text_factura + ("Fecha Contratacion : " + fechaCon + vbCrLf)
-            text_factura = text_factura + ("Fecha Vencimiento : " + fechaVen + vbCrLf)
-            text_factura = text_factura + ("---------------------------" + vbCrLf)
-            text_factura = text_factura + ("         DETALLES          " + vbCrLf)
-            text_factura = text_factura + ("---------------------------" + vbCrLf)
-            text_factura = text_factura + ("Precio Alquiler : $" + precioAlq + vbCrLf)
-            text_factura = text_factura + ("Precio Expensas : $" + precioExp + vbCrLf)
-            text_factura = text_factura + ("" + vbCrLf)
-            text_factura = text_factura + ("Bonificacion : " + boni + vbCrLf)
-            text_factura = text_factura + ("---------------------------" + vbCrLf)
-            text_factura = text_factura + ("TOTAL : $" + total + vbCrLf)
+            Me.ReportViewer1.LocalReport.SetParameters(idFactura)
+            Me.ReportViewer1.LocalReport.SetParameters(idPersona)
+            Me.ReportViewer1.LocalReport.SetParameters(PrecioExpensa)
+            Me.ReportViewer1.LocalReport.SetParameters(PrecioAlquiler)
+            Me.ReportViewer1.LocalReport.SetParameters(Bonificacion)
+            Me.ReportViewer1.LocalReport.SetParameters(FechaVencimiento)
+            Me.ReportViewer1.LocalReport.SetParameters(Tot)
 
-            selectPrinterAndPrint()
+            Me.ReportViewer1.RefreshReport()
 
+            Dim tb As TabPage = TabFacturas.TabPages(2)
+            TabFacturas.SelectedTab = tb
 
         Else
             MsgBox("Guarde la factura antes de imprimirla.")

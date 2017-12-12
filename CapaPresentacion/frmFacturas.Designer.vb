@@ -58,11 +58,14 @@ Partial Class frmFacturas
         Me.DGListaFacturas = New System.Windows.Forms.DataGridView()
         Me.txtBuscar = New System.Windows.Forms.TextBox()
         Me.btnBuscar = New System.Windows.Forms.Button()
+        Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.TabFacturas.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         CType(Me.DGListaFacturas, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage3.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabFacturas
@@ -72,6 +75,7 @@ Partial Class frmFacturas
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TabFacturas.Controls.Add(Me.TabPage1)
         Me.TabFacturas.Controls.Add(Me.TabPage2)
+        Me.TabFacturas.Controls.Add(Me.TabPage3)
         Me.TabFacturas.Location = New System.Drawing.Point(13, 13)
         Me.TabFacturas.Name = "TabFacturas"
         Me.TabFacturas.SelectedIndex = 0
@@ -423,6 +427,27 @@ Partial Class frmFacturas
         Me.btnBuscar.Text = "Buscar"
         Me.btnBuscar.UseVisualStyleBackColor = True
         '
+        'TabPage3
+        '
+        Me.TabPage3.Controls.Add(Me.ReportViewer1)
+        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage3.Name = "TabPage3"
+        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage3.Size = New System.Drawing.Size(469, 317)
+        Me.TabPage3.TabIndex = 2
+        Me.TabPage3.Text = "Reportes"
+        Me.TabPage3.UseVisualStyleBackColor = True
+        '
+        'ReportViewer1
+        '
+        Me.ReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "CapaPresentacion.ReportFacturas.rdlc"
+        Me.ReportViewer1.Location = New System.Drawing.Point(3, 3)
+        Me.ReportViewer1.Name = "ReportViewer1"
+        Me.ReportViewer1.ServerReport.BearerToken = Nothing
+        Me.ReportViewer1.Size = New System.Drawing.Size(463, 311)
+        Me.ReportViewer1.TabIndex = 0
+        '
         'frmFacturas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -430,6 +455,7 @@ Partial Class frmFacturas
         Me.ClientSize = New System.Drawing.Size(502, 368)
         Me.Controls.Add(Me.TabFacturas)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "frmFacturas"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Facturas"
@@ -439,6 +465,7 @@ Partial Class frmFacturas
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
         CType(Me.DGListaFacturas, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPage3.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -479,4 +506,6 @@ Partial Class frmFacturas
     Friend WithEvents btnPrinter As Button
     Friend WithEvents PrintDocument1 As Printing.PrintDocument
     Friend WithEvents btnFechaServicios As Button
+    Friend WithEvents TabPage3 As TabPage
+    Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
 End Class

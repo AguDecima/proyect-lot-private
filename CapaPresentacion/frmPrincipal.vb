@@ -183,4 +183,11 @@ Public Class frmPrincipal
     Private Sub AcercaDeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AcercaDeToolStripMenuItem.Click
         System.Diagnostics.Process.Start("file:///F:/Taller%20de%20Lenguaje%20II/Trabajo%20Final/app%20con%20git/startbootstrap-grayscale-gh-pages/index.html")
     End Sub
+
+    Private Sub ReportesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReportesToolStripMenuItem.Click
+        Dim tb As TabPage = frmFacturas.TabFacturas.TabPages(2)
+        frmFacturas.TabFacturas.SelectedTab = tb
+        frmFacturas.MdiParent = Me
+        frmFacturas.Show()
+    End Sub
 End Class
