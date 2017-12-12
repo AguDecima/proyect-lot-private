@@ -79,7 +79,7 @@ Partial Class frmFacturas
         Me.TabFacturas.Location = New System.Drawing.Point(13, 13)
         Me.TabFacturas.Name = "TabFacturas"
         Me.TabFacturas.SelectedIndex = 0
-        Me.TabFacturas.Size = New System.Drawing.Size(477, 343)
+        Me.TabFacturas.Size = New System.Drawing.Size(566, 369)
         Me.TabFacturas.TabIndex = 0
         '
         'TabPage1
@@ -115,68 +115,75 @@ Partial Class frmFacturas
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(469, 317)
+        Me.TabPage1.Size = New System.Drawing.Size(558, 343)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Datos"
         Me.TabPage1.UseVisualStyleBackColor = True
         '
         'btnFechaServicios
         '
-        Me.btnFechaServicios.Location = New System.Drawing.Point(371, 38)
+        Me.btnFechaServicios.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnFechaServicios.Location = New System.Drawing.Point(474, 36)
         Me.btnFechaServicios.Name = "btnFechaServicios"
-        Me.btnFechaServicios.Size = New System.Drawing.Size(75, 23)
+        Me.btnFechaServicios.Size = New System.Drawing.Size(68, 23)
         Me.btnFechaServicios.TabIndex = 5
         Me.btnFechaServicios.Text = "..."
         Me.btnFechaServicios.UseVisualStyleBackColor = True
         '
         'btnPrinter
         '
-        Me.btnPrinter.Location = New System.Drawing.Point(385, 264)
+        Me.btnPrinter.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnPrinter.Location = New System.Drawing.Point(474, 304)
         Me.btnPrinter.Name = "btnPrinter"
-        Me.btnPrinter.Size = New System.Drawing.Size(75, 23)
-        Me.btnPrinter.TabIndex = 16
+        Me.btnPrinter.Size = New System.Drawing.Size(68, 23)
+        Me.btnPrinter.TabIndex = 17
         Me.btnPrinter.Text = "Imprimir"
         Me.btnPrinter.UseVisualStyleBackColor = True
         '
         'btnVerificar
         '
-        Me.btnVerificar.Location = New System.Drawing.Point(325, 102)
+        Me.btnVerificar.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnVerificar.Location = New System.Drawing.Point(17, 246)
         Me.btnVerificar.Name = "btnVerificar"
-        Me.btnVerificar.Size = New System.Drawing.Size(121, 23)
-        Me.btnVerificar.TabIndex = 7
+        Me.btnVerificar.Size = New System.Drawing.Size(65, 42)
+        Me.btnVerificar.TabIndex = 12
         Me.btnVerificar.Text = "Verificar Bonificacion"
         Me.btnVerificar.UseVisualStyleBackColor = True
         '
         'btnCalcularTotal
         '
-        Me.btnCalcularTotal.Location = New System.Drawing.Point(239, 175)
+        Me.btnCalcularTotal.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnCalcularTotal.Location = New System.Drawing.Point(392, 171)
         Me.btnCalcularTotal.Name = "btnCalcularTotal"
-        Me.btnCalcularTotal.Size = New System.Drawing.Size(72, 23)
+        Me.btnCalcularTotal.Size = New System.Drawing.Size(65, 23)
         Me.btnCalcularTotal.TabIndex = 10
         Me.btnCalcularTotal.Text = "Calcular"
         Me.btnCalcularTotal.UseVisualStyleBackColor = True
         '
         'btnCalcularPrecioAlquiler
         '
-        Me.btnCalcularPrecioAlquiler.Location = New System.Drawing.Point(239, 104)
+        Me.btnCalcularPrecioAlquiler.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnCalcularPrecioAlquiler.Location = New System.Drawing.Point(392, 106)
         Me.btnCalcularPrecioAlquiler.Name = "btnCalcularPrecioAlquiler"
-        Me.btnCalcularPrecioAlquiler.Size = New System.Drawing.Size(72, 23)
+        Me.btnCalcularPrecioAlquiler.Size = New System.Drawing.Size(65, 23)
         Me.btnCalcularPrecioAlquiler.TabIndex = 8
         Me.btnCalcularPrecioAlquiler.Text = "Calcular"
         Me.btnCalcularPrecioAlquiler.UseVisualStyleBackColor = True
         '
         'DTFechaVencimiento
         '
+        Me.DTFechaVencimiento.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.DTFechaVencimiento.Enabled = False
-        Me.DTFechaVencimiento.Location = New System.Drawing.Point(123, 71)
+        Me.DTFechaVencimiento.Location = New System.Drawing.Point(127, 72)
         Me.DTFechaVencimiento.Name = "DTFechaVencimiento"
-        Me.DTFechaVencimiento.Size = New System.Drawing.Size(323, 20)
+        Me.DTFechaVencimiento.Size = New System.Drawing.Size(330, 20)
         Me.DTFechaVencimiento.TabIndex = 6
         '
         'Label9
         '
+        Me.Label9.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(10, 78)
+        Me.Label9.Location = New System.Drawing.Point(14, 79)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(107, 13)
         Me.Label9.TabIndex = 24
@@ -184,18 +191,20 @@ Partial Class frmFacturas
         '
         'DTFechaFactura
         '
+        Me.DTFechaFactura.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.DTFechaFactura.Enabled = False
-        Me.DTFechaFactura.Location = New System.Drawing.Point(123, 38)
+        Me.DTFechaFactura.Location = New System.Drawing.Point(127, 39)
         Me.DTFechaFactura.MaxDate = New Date(2030, 12, 31, 0, 0, 0, 0)
         Me.DTFechaFactura.MinDate = New Date(2016, 1, 1, 0, 0, 0, 0)
         Me.DTFechaFactura.Name = "DTFechaFactura"
-        Me.DTFechaFactura.Size = New System.Drawing.Size(242, 20)
+        Me.DTFechaFactura.Size = New System.Drawing.Size(334, 20)
         Me.DTFechaFactura.TabIndex = 4
         '
         'Label5
         '
+        Me.Label5.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(10, 45)
+        Me.Label5.Location = New System.Drawing.Point(14, 46)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(109, 13)
         Me.Label5.TabIndex = 22
@@ -203,63 +212,70 @@ Partial Class frmFacturas
         '
         'btnCalcularExpensas
         '
-        Me.btnCalcularExpensas.Location = New System.Drawing.Point(239, 139)
+        Me.btnCalcularExpensas.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnCalcularExpensas.Location = New System.Drawing.Point(392, 142)
         Me.btnCalcularExpensas.Name = "btnCalcularExpensas"
-        Me.btnCalcularExpensas.Size = New System.Drawing.Size(72, 23)
+        Me.btnCalcularExpensas.Size = New System.Drawing.Size(65, 23)
         Me.btnCalcularExpensas.TabIndex = 9
         Me.btnCalcularExpensas.Text = "Calcular"
         Me.btnCalcularExpensas.UseVisualStyleBackColor = True
         '
         'btnBorrar
         '
-        Me.btnBorrar.Location = New System.Drawing.Point(290, 264)
+        Me.btnBorrar.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnBorrar.Location = New System.Drawing.Point(371, 304)
         Me.btnBorrar.Name = "btnBorrar"
-        Me.btnBorrar.Size = New System.Drawing.Size(75, 23)
-        Me.btnBorrar.TabIndex = 15
+        Me.btnBorrar.Size = New System.Drawing.Size(68, 23)
+        Me.btnBorrar.TabIndex = 16
         Me.btnBorrar.Text = "Borrar"
         Me.btnBorrar.UseVisualStyleBackColor = True
         '
         'btnEliminar
         '
-        Me.btnEliminar.Location = New System.Drawing.Point(206, 264)
+        Me.btnEliminar.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnEliminar.Location = New System.Drawing.Point(250, 304)
         Me.btnEliminar.Name = "btnEliminar"
-        Me.btnEliminar.Size = New System.Drawing.Size(75, 23)
-        Me.btnEliminar.TabIndex = 14
+        Me.btnEliminar.Size = New System.Drawing.Size(68, 23)
+        Me.btnEliminar.TabIndex = 15
         Me.btnEliminar.Text = "Eliminar"
         Me.btnEliminar.UseVisualStyleBackColor = True
         '
         'btnModificar
         '
-        Me.btnModificar.Location = New System.Drawing.Point(109, 264)
+        Me.btnModificar.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnModificar.Location = New System.Drawing.Point(127, 304)
         Me.btnModificar.Name = "btnModificar"
-        Me.btnModificar.Size = New System.Drawing.Size(75, 23)
-        Me.btnModificar.TabIndex = 13
+        Me.btnModificar.Size = New System.Drawing.Size(68, 23)
+        Me.btnModificar.TabIndex = 14
         Me.btnModificar.Text = "Modificar"
         Me.btnModificar.UseVisualStyleBackColor = True
         '
         'btnCrear
         '
-        Me.btnCrear.Location = New System.Drawing.Point(13, 264)
+        Me.btnCrear.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnCrear.Location = New System.Drawing.Point(17, 304)
         Me.btnCrear.Name = "btnCrear"
-        Me.btnCrear.Size = New System.Drawing.Size(75, 23)
-        Me.btnCrear.TabIndex = 12
+        Me.btnCrear.Size = New System.Drawing.Size(68, 23)
+        Me.btnCrear.TabIndex = 13
         Me.btnCrear.Text = "Crear"
         Me.btnCrear.UseVisualStyleBackColor = True
         '
         'btnIdPersona
         '
-        Me.btnIdPersona.Location = New System.Drawing.Point(371, 6)
+        Me.btnIdPersona.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnIdPersona.Location = New System.Drawing.Point(474, 6)
         Me.btnIdPersona.Name = "btnIdPersona"
-        Me.btnIdPersona.Size = New System.Drawing.Size(75, 23)
+        Me.btnIdPersona.Size = New System.Drawing.Size(68, 23)
         Me.btnIdPersona.TabIndex = 3
         Me.btnIdPersona.Text = "..."
         Me.btnIdPersona.UseVisualStyleBackColor = True
         '
         'lblBonificacion
         '
+        Me.lblBonificacion.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lblBonificacion.AutoSize = True
         Me.lblBonificacion.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBonificacion.Location = New System.Drawing.Point(339, 140)
+        Me.lblBonificacion.Location = New System.Drawing.Point(124, 257)
         Me.lblBonificacion.Name = "lblBonificacion"
         Me.lblBonificacion.Size = New System.Drawing.Size(94, 18)
         Me.lblBonificacion.TabIndex = 14
@@ -267,58 +283,66 @@ Partial Class frmFacturas
         '
         'CBCondicion
         '
+        Me.CBCondicion.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.CBCondicion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CBCondicion.FormattingEnabled = True
+        Me.CBCondicion.ItemHeight = 13
         Me.CBCondicion.Items.AddRange(New Object() {"Adeuda", "Pagado"})
-        Me.CBCondicion.Location = New System.Drawing.Point(123, 211)
+        Me.CBCondicion.Location = New System.Drawing.Point(127, 212)
         Me.CBCondicion.Name = "CBCondicion"
-        Me.CBCondicion.Size = New System.Drawing.Size(108, 21)
+        Me.CBCondicion.Size = New System.Drawing.Size(252, 21)
         Me.CBCondicion.TabIndex = 11
         '
         'txtTotalFactura
         '
+        Me.txtTotalFactura.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.txtTotalFactura.Enabled = False
-        Me.txtTotalFactura.Location = New System.Drawing.Point(123, 175)
+        Me.txtTotalFactura.Location = New System.Drawing.Point(127, 176)
         Me.txtTotalFactura.Name = "txtTotalFactura"
-        Me.txtTotalFactura.Size = New System.Drawing.Size(108, 20)
+        Me.txtTotalFactura.Size = New System.Drawing.Size(252, 20)
         Me.txtTotalFactura.TabIndex = 12
         '
         'txtPrecioExpensas
         '
+        Me.txtPrecioExpensas.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.txtPrecioExpensas.Enabled = False
-        Me.txtPrecioExpensas.Location = New System.Drawing.Point(123, 139)
+        Me.txtPrecioExpensas.Location = New System.Drawing.Point(127, 145)
         Me.txtPrecioExpensas.Name = "txtPrecioExpensas"
-        Me.txtPrecioExpensas.Size = New System.Drawing.Size(108, 20)
+        Me.txtPrecioExpensas.Size = New System.Drawing.Size(252, 20)
         Me.txtPrecioExpensas.TabIndex = 11
         '
         'txtPrecioAlquiler
         '
+        Me.txtPrecioAlquiler.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.txtPrecioAlquiler.Enabled = False
-        Me.txtPrecioAlquiler.Location = New System.Drawing.Point(123, 107)
+        Me.txtPrecioAlquiler.Location = New System.Drawing.Point(127, 108)
         Me.txtPrecioAlquiler.Name = "txtPrecioAlquiler"
-        Me.txtPrecioAlquiler.Size = New System.Drawing.Size(108, 20)
+        Me.txtPrecioAlquiler.Size = New System.Drawing.Size(252, 20)
         Me.txtPrecioAlquiler.TabIndex = 10
         '
         'txtIdPersona
         '
-        Me.txtIdPersona.Location = New System.Drawing.Point(304, 8)
+        Me.txtIdPersona.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.txtIdPersona.Location = New System.Drawing.Point(407, 8)
         Me.txtIdPersona.MaxLength = 5
         Me.txtIdPersona.Name = "txtIdPersona"
-        Me.txtIdPersona.Size = New System.Drawing.Size(61, 20)
+        Me.txtIdPersona.Size = New System.Drawing.Size(54, 20)
         Me.txtIdPersona.TabIndex = 2
         '
         'txtIdFactura
         '
-        Me.txtIdFactura.Location = New System.Drawing.Point(123, 9)
+        Me.txtIdFactura.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.txtIdFactura.Location = New System.Drawing.Point(127, 10)
         Me.txtIdFactura.MaxLength = 5
         Me.txtIdFactura.Name = "txtIdFactura"
-        Me.txtIdFactura.Size = New System.Drawing.Size(70, 20)
+        Me.txtIdFactura.Size = New System.Drawing.Size(63, 20)
         Me.txtIdFactura.TabIndex = 1
         '
         'Label7
         '
+        Me.Label7.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(10, 182)
+        Me.Label7.Location = New System.Drawing.Point(14, 183)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(37, 13)
         Me.Label7.TabIndex = 6
@@ -326,8 +350,9 @@ Partial Class frmFacturas
         '
         'Label6
         '
+        Me.Label6.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(10, 219)
+        Me.Label6.Location = New System.Drawing.Point(14, 220)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(60, 13)
         Me.Label6.TabIndex = 5
@@ -335,8 +360,9 @@ Partial Class frmFacturas
         '
         'Label4
         '
+        Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(10, 146)
+        Me.Label4.Location = New System.Drawing.Point(14, 152)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(92, 13)
         Me.Label4.TabIndex = 3
@@ -344,8 +370,9 @@ Partial Class frmFacturas
         '
         'Label3
         '
+        Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(10, 114)
+        Me.Label3.Location = New System.Drawing.Point(14, 115)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(80, 13)
         Me.Label3.TabIndex = 2
@@ -353,8 +380,9 @@ Partial Class frmFacturas
         '
         'Label2
         '
+        Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(223, 15)
+        Me.Label2.Location = New System.Drawing.Point(326, 13)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(75, 13)
         Me.Label2.TabIndex = 1
@@ -362,8 +390,9 @@ Partial Class frmFacturas
         '
         'Label1
         '
+        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(10, 16)
+        Me.Label1.Location = New System.Drawing.Point(14, 17)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(72, 13)
         Me.Label1.TabIndex = 0
@@ -378,7 +407,7 @@ Partial Class frmFacturas
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(469, 317)
+        Me.TabPage2.Size = New System.Drawing.Size(558, 343)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Lista"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -386,7 +415,7 @@ Partial Class frmFacturas
         'btnActualizar
         '
         Me.btnActualizar.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.btnActualizar.Location = New System.Drawing.Point(302, 11)
+        Me.btnActualizar.Location = New System.Drawing.Point(391, 13)
         Me.btnActualizar.Name = "btnActualizar"
         Me.btnActualizar.Size = New System.Drawing.Size(75, 23)
         Me.btnActualizar.TabIndex = 2
@@ -406,21 +435,23 @@ Partial Class frmFacturas
         Me.DGListaFacturas.MultiSelect = False
         Me.DGListaFacturas.Name = "DGListaFacturas"
         Me.DGListaFacturas.ReadOnly = True
-        Me.DGListaFacturas.Size = New System.Drawing.Size(452, 269)
+        Me.DGListaFacturas.Size = New System.Drawing.Size(541, 295)
         Me.DGListaFacturas.TabIndex = 2
         '
         'txtBuscar
         '
-        Me.txtBuscar.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtBuscar.Location = New System.Drawing.Point(6, 13)
+        Me.txtBuscar.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtBuscar.Location = New System.Drawing.Point(6, 16)
         Me.txtBuscar.Name = "txtBuscar"
-        Me.txtBuscar.Size = New System.Drawing.Size(275, 20)
+        Me.txtBuscar.Size = New System.Drawing.Size(364, 20)
         Me.txtBuscar.TabIndex = 1
         '
         'btnBuscar
         '
         Me.btnBuscar.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.btnBuscar.Location = New System.Drawing.Point(383, 11)
+        Me.btnBuscar.Location = New System.Drawing.Point(472, 13)
         Me.btnBuscar.Name = "btnBuscar"
         Me.btnBuscar.Size = New System.Drawing.Size(75, 23)
         Me.btnBuscar.TabIndex = 3
@@ -433,7 +464,7 @@ Partial Class frmFacturas
         Me.TabPage3.Location = New System.Drawing.Point(4, 22)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(469, 317)
+        Me.TabPage3.Size = New System.Drawing.Size(558, 343)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Reportes"
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -445,14 +476,14 @@ Partial Class frmFacturas
         Me.ReportViewer1.Location = New System.Drawing.Point(3, 3)
         Me.ReportViewer1.Name = "ReportViewer1"
         Me.ReportViewer1.ServerReport.BearerToken = Nothing
-        Me.ReportViewer1.Size = New System.Drawing.Size(463, 311)
+        Me.ReportViewer1.Size = New System.Drawing.Size(552, 337)
         Me.ReportViewer1.TabIndex = 0
         '
         'frmFacturas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(502, 368)
+        Me.ClientSize = New System.Drawing.Size(591, 394)
         Me.Controls.Add(Me.TabFacturas)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False

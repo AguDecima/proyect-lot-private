@@ -53,10 +53,10 @@ Partial Class frmLotePrivado
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TabLotePrivado.Controls.Add(Me.TabPage1)
         Me.TabLotePrivado.Controls.Add(Me.TabPage2)
-        Me.TabLotePrivado.Location = New System.Drawing.Point(13, 13)
+        Me.TabLotePrivado.Location = New System.Drawing.Point(13, 12)
         Me.TabLotePrivado.Name = "TabLotePrivado"
         Me.TabLotePrivado.SelectedIndex = 0
-        Me.TabLotePrivado.Size = New System.Drawing.Size(357, 187)
+        Me.TabLotePrivado.Size = New System.Drawing.Size(412, 200)
         Me.TabLotePrivado.TabIndex = 0
         '
         'TabPage1
@@ -74,7 +74,7 @@ Partial Class frmLotePrivado
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(349, 161)
+        Me.TabPage1.Size = New System.Drawing.Size(404, 174)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Datos"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -84,7 +84,7 @@ Partial Class frmLotePrivado
         Me.txtPrecio.Location = New System.Drawing.Point(95, 90)
         Me.txtPrecio.MaxLength = 10
         Me.txtPrecio.Name = "txtPrecio"
-        Me.txtPrecio.Size = New System.Drawing.Size(239, 20)
+        Me.txtPrecio.Size = New System.Drawing.Size(295, 20)
         Me.txtPrecio.TabIndex = 3
         '
         'Label3
@@ -101,7 +101,7 @@ Partial Class frmLotePrivado
         Me.txtAreaLote.Location = New System.Drawing.Point(95, 47)
         Me.txtAreaLote.MaxLength = 10
         Me.txtAreaLote.Name = "txtAreaLote"
-        Me.txtAreaLote.Size = New System.Drawing.Size(239, 20)
+        Me.txtAreaLote.Size = New System.Drawing.Size(295, 20)
         Me.txtAreaLote.TabIndex = 2
         '
         'txtIdLote
@@ -110,12 +110,12 @@ Partial Class frmLotePrivado
         Me.txtIdLote.Location = New System.Drawing.Point(95, 11)
         Me.txtIdLote.MaxLength = 5
         Me.txtIdLote.Name = "txtIdLote"
-        Me.txtIdLote.Size = New System.Drawing.Size(239, 20)
+        Me.txtIdLote.Size = New System.Drawing.Size(295, 20)
         Me.txtIdLote.TabIndex = 1
         '
         'btnBorrar
         '
-        Me.btnBorrar.Location = New System.Drawing.Point(259, 132)
+        Me.btnBorrar.Location = New System.Drawing.Point(315, 132)
         Me.btnBorrar.Name = "btnBorrar"
         Me.btnBorrar.Size = New System.Drawing.Size(75, 23)
         Me.btnBorrar.TabIndex = 7
@@ -124,7 +124,7 @@ Partial Class frmLotePrivado
         '
         'btnEliminar
         '
-        Me.btnEliminar.Location = New System.Drawing.Point(177, 132)
+        Me.btnEliminar.Location = New System.Drawing.Point(220, 132)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(75, 23)
         Me.btnEliminar.TabIndex = 6
@@ -133,7 +133,7 @@ Partial Class frmLotePrivado
         '
         'btnModificar
         '
-        Me.btnModificar.Location = New System.Drawing.Point(95, 132)
+        Me.btnModificar.Location = New System.Drawing.Point(121, 132)
         Me.btnModificar.Name = "btnModificar"
         Me.btnModificar.Size = New System.Drawing.Size(75, 23)
         Me.btnModificar.TabIndex = 5
@@ -176,7 +176,7 @@ Partial Class frmLotePrivado
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(349, 161)
+        Me.TabPage2.Size = New System.Drawing.Size(404, 174)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Listado"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -184,7 +184,7 @@ Partial Class frmLotePrivado
         'btnActualizar
         '
         Me.btnActualizar.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.btnActualizar.Location = New System.Drawing.Point(188, 3)
+        Me.btnActualizar.Location = New System.Drawing.Point(244, 4)
         Me.btnActualizar.Name = "btnActualizar"
         Me.btnActualizar.Size = New System.Drawing.Size(75, 23)
         Me.btnActualizar.TabIndex = 2
@@ -204,13 +204,13 @@ Partial Class frmLotePrivado
         Me.DGListaLotesPrivados.MultiSelect = False
         Me.DGListaLotesPrivados.Name = "DGListaLotesPrivados"
         Me.DGListaLotesPrivados.ReadOnly = True
-        Me.DGListaLotesPrivados.Size = New System.Drawing.Size(336, 124)
+        Me.DGListaLotesPrivados.Size = New System.Drawing.Size(391, 137)
         Me.DGListaLotesPrivados.TabIndex = 9
         '
         'btnBuscar
         '
         Me.btnBuscar.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.btnBuscar.Location = New System.Drawing.Point(268, 3)
+        Me.btnBuscar.Location = New System.Drawing.Point(323, 3)
         Me.btnBuscar.Name = "btnBuscar"
         Me.btnBuscar.Size = New System.Drawing.Size(75, 23)
         Me.btnBuscar.TabIndex = 3
@@ -220,17 +220,17 @@ Partial Class frmLotePrivado
         'txtBuscar
         '
         Me.txtBuscar.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtBuscar.Location = New System.Drawing.Point(6, 6)
+        Me.txtBuscar.Location = New System.Drawing.Point(7, 7)
         Me.txtBuscar.MaxLength = 1
         Me.txtBuscar.Name = "txtBuscar"
-        Me.txtBuscar.Size = New System.Drawing.Size(176, 20)
+        Me.txtBuscar.Size = New System.Drawing.Size(231, 20)
         Me.txtBuscar.TabIndex = 7
         '
         'frmLotePrivado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(382, 204)
+        Me.ClientSize = New System.Drawing.Size(437, 217)
         Me.Controls.Add(Me.TabLotePrivado)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False

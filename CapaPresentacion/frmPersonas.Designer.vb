@@ -82,7 +82,7 @@ Partial Class frmPersonas
         Me.TabPersonas.Location = New System.Drawing.Point(13, 13)
         Me.TabPersonas.Name = "TabPersonas"
         Me.TabPersonas.SelectedIndex = 0
-        Me.TabPersonas.Size = New System.Drawing.Size(376, 298)
+        Me.TabPersonas.Size = New System.Drawing.Size(489, 298)
         Me.TabPersonas.TabIndex = 0
         '
         'TabPage1
@@ -111,7 +111,7 @@ Partial Class frmPersonas
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(368, 272)
+        Me.TabPage1.Size = New System.Drawing.Size(481, 272)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Datos"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -121,7 +121,7 @@ Partial Class frmPersonas
         Me.txtTelefono.Location = New System.Drawing.Point(112, 95)
         Me.txtTelefono.MaxLength = 12
         Me.txtTelefono.Name = "txtTelefono"
-        Me.txtTelefono.Size = New System.Drawing.Size(250, 20)
+        Me.txtTelefono.Size = New System.Drawing.Size(363, 20)
         Me.txtTelefono.TabIndex = 5
         '
         'Label7
@@ -136,16 +136,16 @@ Partial Class frmPersonas
         'txtIdPersona
         '
         Me.txtIdPersona.Enabled = False
-        Me.txtIdPersona.Location = New System.Drawing.Point(307, 9)
+        Me.txtIdPersona.Location = New System.Drawing.Point(400, 6)
         Me.txtIdPersona.MaxLength = 5
         Me.txtIdPersona.Name = "txtIdPersona"
-        Me.txtIdPersona.Size = New System.Drawing.Size(55, 20)
+        Me.txtIdPersona.Size = New System.Drawing.Size(75, 20)
         Me.txtIdPersona.TabIndex = 2
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(276, 12)
+        Me.Label6.Location = New System.Drawing.Point(368, 13)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(33, 13)
         Me.Label6.TabIndex = 17
@@ -154,7 +154,7 @@ Partial Class frmPersonas
         '
         'btnBorrar
         '
-        Me.btnBorrar.Location = New System.Drawing.Point(279, 236)
+        Me.btnBorrar.Location = New System.Drawing.Point(400, 236)
         Me.btnBorrar.Name = "btnBorrar"
         Me.btnBorrar.Size = New System.Drawing.Size(75, 23)
         Me.btnBorrar.TabIndex = 14
@@ -163,7 +163,7 @@ Partial Class frmPersonas
         '
         'btnEliminar
         '
-        Me.btnEliminar.Location = New System.Drawing.Point(198, 236)
+        Me.btnEliminar.Location = New System.Drawing.Point(287, 236)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(75, 23)
         Me.btnEliminar.TabIndex = 13
@@ -172,7 +172,7 @@ Partial Class frmPersonas
         '
         'btnModificar
         '
-        Me.btnModificar.Location = New System.Drawing.Point(90, 236)
+        Me.btnModificar.Location = New System.Drawing.Point(158, 236)
         Me.btnModificar.Name = "btnModificar"
         Me.btnModificar.Size = New System.Drawing.Size(75, 23)
         Me.btnModificar.TabIndex = 12
@@ -181,7 +181,7 @@ Partial Class frmPersonas
         '
         'btnCrear
         '
-        Me.btnCrear.Location = New System.Drawing.Point(9, 236)
+        Me.btnCrear.Location = New System.Drawing.Point(31, 236)
         Me.btnCrear.Name = "btnCrear"
         Me.btnCrear.Size = New System.Drawing.Size(75, 23)
         Me.btnCrear.TabIndex = 11
@@ -190,9 +190,9 @@ Partial Class frmPersonas
         '
         'btnNroLote
         '
-        Me.btnNroLote.Location = New System.Drawing.Point(279, 161)
+        Me.btnNroLote.Location = New System.Drawing.Point(400, 162)
         Me.btnNroLote.Name = "btnNroLote"
-        Me.btnNroLote.Size = New System.Drawing.Size(83, 23)
+        Me.btnNroLote.Size = New System.Drawing.Size(75, 23)
         Me.btnNroLote.TabIndex = 8
         Me.btnNroLote.Text = "..."
         Me.btnNroLote.UseVisualStyleBackColor = True
@@ -202,7 +202,7 @@ Partial Class frmPersonas
         Me.txtNroLote.Location = New System.Drawing.Point(112, 164)
         Me.txtNroLote.MaxLength = 7
         Me.txtNroLote.Name = "txtNroLote"
-        Me.txtNroLote.Size = New System.Drawing.Size(161, 20)
+        Me.txtNroLote.Size = New System.Drawing.Size(282, 20)
         Me.txtNroLote.TabIndex = 11
         '
         'txtDni
@@ -210,7 +210,7 @@ Partial Class frmPersonas
         Me.txtDni.Location = New System.Drawing.Point(112, 130)
         Me.txtDni.MaxLength = 12
         Me.txtDni.Name = "txtDni"
-        Me.txtDni.Size = New System.Drawing.Size(250, 20)
+        Me.txtDni.Size = New System.Drawing.Size(363, 20)
         Me.txtDni.TabIndex = 6
         '
         'DTFechaNacimiento
@@ -219,7 +219,7 @@ Partial Class frmPersonas
         Me.DTFechaNacimiento.MaxDate = New Date(2017, 12, 31, 0, 0, 0, 0)
         Me.DTFechaNacimiento.MinDate = New Date(1917, 1, 1, 0, 0, 0, 0)
         Me.DTFechaNacimiento.Name = "DTFechaNacimiento"
-        Me.DTFechaNacimiento.Size = New System.Drawing.Size(250, 20)
+        Me.DTFechaNacimiento.Size = New System.Drawing.Size(363, 20)
         Me.DTFechaNacimiento.TabIndex = 4
         '
         'txtApellido
@@ -227,7 +227,7 @@ Partial Class frmPersonas
         Me.txtApellido.Location = New System.Drawing.Point(112, 36)
         Me.txtApellido.MaxLength = 30
         Me.txtApellido.Name = "txtApellido"
-        Me.txtApellido.Size = New System.Drawing.Size(250, 20)
+        Me.txtApellido.Size = New System.Drawing.Size(363, 20)
         Me.txtApellido.TabIndex = 3
         '
         'txtNombre
@@ -235,13 +235,13 @@ Partial Class frmPersonas
         Me.txtNombre.Location = New System.Drawing.Point(112, 6)
         Me.txtNombre.MaxLength = 30
         Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(161, 20)
+        Me.txtNombre.Size = New System.Drawing.Size(250, 20)
         Me.txtNombre.TabIndex = 1
         '
         'cbHabitante
         '
         Me.cbHabitante.AutoSize = True
-        Me.cbHabitante.Location = New System.Drawing.Point(201, 202)
+        Me.cbHabitante.Location = New System.Drawing.Point(322, 202)
         Me.cbHabitante.Name = "cbHabitante"
         Me.cbHabitante.Size = New System.Drawing.Size(72, 17)
         Me.cbHabitante.TabIndex = 10
@@ -312,7 +312,7 @@ Partial Class frmPersonas
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(368, 272)
+        Me.TabPage2.Size = New System.Drawing.Size(481, 272)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Lista Habitantes"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -320,7 +320,7 @@ Partial Class frmPersonas
         'btnActualizar
         '
         Me.btnActualizar.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.btnActualizar.Location = New System.Drawing.Point(204, 5)
+        Me.btnActualizar.Location = New System.Drawing.Point(317, 5)
         Me.btnActualizar.Name = "btnActualizar"
         Me.btnActualizar.Size = New System.Drawing.Size(75, 23)
         Me.btnActualizar.TabIndex = 2
@@ -340,13 +340,13 @@ Partial Class frmPersonas
         Me.ListaHabitantes.MultiSelect = False
         Me.ListaHabitantes.Name = "ListaHabitantes"
         Me.ListaHabitantes.ReadOnly = True
-        Me.ListaHabitantes.Size = New System.Drawing.Size(353, 233)
+        Me.ListaHabitantes.Size = New System.Drawing.Size(466, 233)
         Me.ListaHabitantes.TabIndex = 14
         '
         'btnBuscarHabitantes
         '
         Me.btnBuscarHabitantes.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.btnBuscarHabitantes.Location = New System.Drawing.Point(285, 4)
+        Me.btnBuscarHabitantes.Location = New System.Drawing.Point(398, 4)
         Me.btnBuscarHabitantes.Name = "btnBuscarHabitantes"
         Me.btnBuscarHabitantes.Size = New System.Drawing.Size(75, 23)
         Me.btnBuscarHabitantes.TabIndex = 13
@@ -359,7 +359,7 @@ Partial Class frmPersonas
         Me.txtBuscarHabitantes.Location = New System.Drawing.Point(7, 7)
         Me.txtBuscarHabitantes.MaxLength = 5
         Me.txtBuscarHabitantes.Name = "txtBuscarHabitantes"
-        Me.txtBuscarHabitantes.Size = New System.Drawing.Size(191, 20)
+        Me.txtBuscarHabitantes.Size = New System.Drawing.Size(304, 20)
         Me.txtBuscarHabitantes.TabIndex = 0
         '
         'TabPage3
@@ -370,7 +370,7 @@ Partial Class frmPersonas
         Me.TabPage3.Controls.Add(Me.txtBuscarPropietarios)
         Me.TabPage3.Location = New System.Drawing.Point(4, 22)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Size = New System.Drawing.Size(368, 272)
+        Me.TabPage3.Size = New System.Drawing.Size(481, 272)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Lista Propietarios"
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -378,7 +378,7 @@ Partial Class frmPersonas
         'btnMostrar
         '
         Me.btnMostrar.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.btnMostrar.Location = New System.Drawing.Point(200, 9)
+        Me.btnMostrar.Location = New System.Drawing.Point(313, 9)
         Me.btnMostrar.Name = "btnMostrar"
         Me.btnMostrar.Size = New System.Drawing.Size(75, 23)
         Me.btnMostrar.TabIndex = 17
@@ -398,13 +398,13 @@ Partial Class frmPersonas
         Me.ListaPropietarios.MultiSelect = False
         Me.ListaPropietarios.Name = "ListaPropietarios"
         Me.ListaPropietarios.ReadOnly = True
-        Me.ListaPropietarios.Size = New System.Drawing.Size(352, 230)
+        Me.ListaPropietarios.Size = New System.Drawing.Size(465, 230)
         Me.ListaPropietarios.TabIndex = 16
         '
         'btnBuscarPropietarios
         '
         Me.btnBuscarPropietarios.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.btnBuscarPropietarios.Location = New System.Drawing.Point(281, 10)
+        Me.btnBuscarPropietarios.Location = New System.Drawing.Point(394, 10)
         Me.btnBuscarPropietarios.Name = "btnBuscarPropietarios"
         Me.btnBuscarPropietarios.Size = New System.Drawing.Size(75, 23)
         Me.btnBuscarPropietarios.TabIndex = 15
@@ -417,7 +417,7 @@ Partial Class frmPersonas
         Me.txtBuscarPropietarios.Location = New System.Drawing.Point(4, 11)
         Me.txtBuscarPropietarios.MaxLength = 5
         Me.txtBuscarPropietarios.Name = "txtBuscarPropietarios"
-        Me.txtBuscarPropietarios.Size = New System.Drawing.Size(191, 20)
+        Me.txtBuscarPropietarios.Size = New System.Drawing.Size(304, 20)
         Me.txtBuscarPropietarios.TabIndex = 14
         '
         'TabPage4
@@ -427,7 +427,7 @@ Partial Class frmPersonas
         Me.TabPage4.Controls.Add(Me.txtBuscarHabForLote)
         Me.TabPage4.Location = New System.Drawing.Point(4, 22)
         Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Size = New System.Drawing.Size(368, 272)
+        Me.TabPage4.Size = New System.Drawing.Size(481, 272)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "Habitantes Por Lotes"
         Me.TabPage4.UseVisualStyleBackColor = True
@@ -445,13 +445,13 @@ Partial Class frmPersonas
         Me.HabitantesLotes.MultiSelect = False
         Me.HabitantesLotes.Name = "HabitantesLotes"
         Me.HabitantesLotes.ReadOnly = True
-        Me.HabitantesLotes.Size = New System.Drawing.Size(352, 230)
+        Me.HabitantesLotes.Size = New System.Drawing.Size(465, 230)
         Me.HabitantesLotes.TabIndex = 19
         '
         'btnHabitanteForLote
         '
         Me.btnHabitanteForLote.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.btnHabitanteForLote.Location = New System.Drawing.Point(286, 6)
+        Me.btnHabitanteForLote.Location = New System.Drawing.Point(399, 6)
         Me.btnHabitanteForLote.Name = "btnHabitanteForLote"
         Me.btnHabitanteForLote.Size = New System.Drawing.Size(75, 23)
         Me.btnHabitanteForLote.TabIndex = 18
@@ -464,14 +464,14 @@ Partial Class frmPersonas
         Me.txtBuscarHabForLote.Location = New System.Drawing.Point(8, 9)
         Me.txtBuscarHabForLote.MaxLength = 5
         Me.txtBuscarHabForLote.Name = "txtBuscarHabForLote"
-        Me.txtBuscarHabForLote.Size = New System.Drawing.Size(272, 20)
+        Me.txtBuscarHabForLote.Size = New System.Drawing.Size(385, 20)
         Me.txtBuscarHabForLote.TabIndex = 17
         '
         'frmPersonas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(401, 326)
+        Me.ClientSize = New System.Drawing.Size(514, 326)
         Me.Controls.Add(Me.TabPersonas)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False

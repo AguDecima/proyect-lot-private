@@ -333,6 +333,8 @@
     End Sub
 
     Private Sub ListaHabitantes_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles ListaHabitantes.CellDoubleClick
+        Dim propietario, habitante As Integer
+
         txtIdPersona.Text = Convert.ToString(ListaHabitantes.CurrentRow.Cells(0).Value)
         txtNombre.Text = Convert.ToString(ListaHabitantes.CurrentRow.Cells(1).Value)
         txtApellido.Text = Convert.ToString(ListaHabitantes.CurrentRow.Cells(2).Value)
@@ -340,7 +342,20 @@
         txtNroLote.Text = Convert.ToString(ListaHabitantes.CurrentRow.Cells(6).Value)
         DTFechaNacimiento.Text = Convert.ToString(ListaHabitantes.CurrentRow.Cells(5).Value)
         txtDni.Text = Convert.ToString(ListaHabitantes.CurrentRow.Cells(3).Value)
-        cbHabitante.Checked = True
+        propietario = Convert.ToInt16(ListaHabitantes.CurrentRow.Cells(7).Value)
+        habitante = Convert.ToInt16(ListaHabitantes.CurrentRow.Cells(8).Value)
+
+        If propietario = 0 Then
+            cbPropietario.Checked = False
+        Else
+            cbPropietario.Checked = True
+        End If
+
+        If habitante = 0 Then
+            cbHabitante.Checked = False
+        Else
+            cbHabitante.Checked = True
+        End If
 
         Dim tb As TabPage = TabPersonas.TabPages(0)
         TabPersonas.SelectedTab = tb
@@ -353,6 +368,8 @@
     End Sub
 
     Private Sub ListaPropietarios_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles ListaPropietarios.CellDoubleClick
+        Dim propietario, habitante As Integer
+
         txtIdPersona.Text = Convert.ToString(ListaHabitantes.CurrentRow.Cells(0).Value)
         txtNombre.Text = Convert.ToString(ListaHabitantes.CurrentRow.Cells(1).Value)
         txtApellido.Text = Convert.ToString(ListaHabitantes.CurrentRow.Cells(2).Value)
@@ -360,7 +377,20 @@
         txtNroLote.Text = Convert.ToString(ListaHabitantes.CurrentRow.Cells(6).Value)
         DTFechaNacimiento.Text = Convert.ToString(ListaHabitantes.CurrentRow.Cells(5).Value)
         txtDni.Text = Convert.ToString(ListaHabitantes.CurrentRow.Cells(3).Value)
-        cbPropietario.Checked = True
+        propietario = Convert.ToInt16(ListaHabitantes.CurrentRow.Cells(7).Value)
+        habitante = Convert.ToInt16(ListaHabitantes.CurrentRow.Cells(8).Value)
+
+        If propietario = 0 Then
+            cbPropietario.Checked = False
+        Else
+            cbPropietario.Checked = True
+        End If
+
+        If habitante = 0 Then
+            cbHabitante.Checked = False
+        Else
+            cbHabitante.Checked = True
+        End If
 
         Dim tb As TabPage = TabPersonas.TabPages(0)
         TabPersonas.SelectedTab = tb

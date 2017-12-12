@@ -46,7 +46,7 @@
     End Sub
 
     Private Sub DGListaServicios_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGListaServicios.CellDoubleClick
-        frmFacturas.DTFechaFactura.Text = Convert.ToString(DGListaServicios.CurrentRow.Cells(3).Value)
+        frmFacturas.DTFechaFactura.Text = Convert.ToString(DGListaServicios.CurrentRow.Cells(4).Value)
         Me.Close()
     End Sub
 End Class

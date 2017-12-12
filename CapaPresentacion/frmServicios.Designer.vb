@@ -63,7 +63,7 @@ Partial Class frmServicios
         Me.TabServicios.Location = New System.Drawing.Point(12, 12)
         Me.TabServicios.Name = "TabServicios"
         Me.TabServicios.SelectedIndex = 0
-        Me.TabServicios.Size = New System.Drawing.Size(424, 288)
+        Me.TabServicios.Size = New System.Drawing.Size(509, 255)
         Me.TabServicios.TabIndex = 2
         '
         'TabPage1
@@ -88,7 +88,7 @@ Partial Class frmServicios
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(416, 262)
+        Me.TabPage1.Size = New System.Drawing.Size(501, 229)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Datos"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -99,7 +99,7 @@ Partial Class frmServicios
         Me.txtNroServicio.Location = New System.Drawing.Point(87, 17)
         Me.txtNroServicio.MaxLength = 5
         Me.txtNroServicio.Name = "txtNroServicio"
-        Me.txtNroServicio.Size = New System.Drawing.Size(99, 20)
+        Me.txtNroServicio.Size = New System.Drawing.Size(151, 20)
         Me.txtNroServicio.TabIndex = 33
         '
         'Label8
@@ -113,9 +113,9 @@ Partial Class frmServicios
         '
         'btnNroLote
         '
-        Me.btnNroLote.Location = New System.Drawing.Point(356, 15)
+        Me.btnNroLote.Location = New System.Drawing.Point(424, 14)
         Me.btnNroLote.Name = "btnNroLote"
-        Me.btnNroLote.Size = New System.Drawing.Size(54, 23)
+        Me.btnNroLote.Size = New System.Drawing.Size(71, 23)
         Me.btnNroLote.TabIndex = 31
         Me.btnNroLote.Text = "..."
         Me.btnNroLote.UseVisualStyleBackColor = True
@@ -127,8 +127,8 @@ Partial Class frmServicios
         Me.CBEmpresas.Items.AddRange(New Object() {"DirecTV", "Arnet", "Telefonica", "Basurero Municipal", "Basurero Privado", "CCC", "Super Canal", "EDET", "SAT", "GASNOR"})
         Me.CBEmpresas.Location = New System.Drawing.Point(87, 69)
         Me.CBEmpresas.Name = "CBEmpresas"
-        Me.CBEmpresas.Size = New System.Drawing.Size(323, 21)
-        Me.CBEmpresas.TabIndex = 26
+        Me.CBEmpresas.Size = New System.Drawing.Size(408, 21)
+        Me.CBEmpresas.TabIndex = 3
         '
         'CBNombres
         '
@@ -137,16 +137,16 @@ Partial Class frmServicios
         Me.CBNombres.Items.AddRange(New Object() {"Basura", "Agua", "Television", "Internet", "Telefono", "Electricidad"})
         Me.CBNombres.Location = New System.Drawing.Point(87, 43)
         Me.CBNombres.Name = "CBNombres"
-        Me.CBNombres.Size = New System.Drawing.Size(323, 21)
-        Me.CBNombres.TabIndex = 25
+        Me.CBNombres.Size = New System.Drawing.Size(408, 21)
+        Me.CBNombres.TabIndex = 2
         '
         'DTFechaContratacion
         '
         Me.DTFechaContratacion.Enabled = False
         Me.DTFechaContratacion.Location = New System.Drawing.Point(87, 100)
         Me.DTFechaContratacion.Name = "DTFechaContratacion"
-        Me.DTFechaContratacion.Size = New System.Drawing.Size(323, 20)
-        Me.DTFechaContratacion.TabIndex = 24
+        Me.DTFechaContratacion.Size = New System.Drawing.Size(408, 20)
+        Me.DTFechaContratacion.TabIndex = 4
         '
         'Label5
         '
@@ -159,28 +159,28 @@ Partial Class frmServicios
         '
         'btnBorrar
         '
-        Me.btnBorrar.Location = New System.Drawing.Point(335, 174)
+        Me.btnBorrar.Location = New System.Drawing.Point(420, 174)
         Me.btnBorrar.Name = "btnBorrar"
         Me.btnBorrar.Size = New System.Drawing.Size(75, 23)
-        Me.btnBorrar.TabIndex = 22
+        Me.btnBorrar.TabIndex = 9
         Me.btnBorrar.Text = "Borrar"
         Me.btnBorrar.UseVisualStyleBackColor = True
         '
         'btnEliminar
         '
-        Me.btnEliminar.Location = New System.Drawing.Point(226, 174)
+        Me.btnEliminar.Location = New System.Drawing.Point(291, 174)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(75, 23)
-        Me.btnEliminar.TabIndex = 21
+        Me.btnEliminar.TabIndex = 8
         Me.btnEliminar.Text = "Eliminar"
         Me.btnEliminar.UseVisualStyleBackColor = True
         '
         'btnModificar
         '
-        Me.btnModificar.Location = New System.Drawing.Point(111, 174)
+        Me.btnModificar.Location = New System.Drawing.Point(163, 174)
         Me.btnModificar.Name = "btnModificar"
         Me.btnModificar.Size = New System.Drawing.Size(75, 23)
-        Me.btnModificar.TabIndex = 20
+        Me.btnModificar.TabIndex = 7
         Me.btnModificar.Text = "Modificar"
         Me.btnModificar.UseVisualStyleBackColor = True
         '
@@ -189,7 +189,7 @@ Partial Class frmServicios
         Me.btnCrear.Location = New System.Drawing.Point(10, 174)
         Me.btnCrear.Name = "btnCrear"
         Me.btnCrear.Size = New System.Drawing.Size(75, 23)
-        Me.btnCrear.TabIndex = 19
+        Me.btnCrear.TabIndex = 6
         Me.btnCrear.Text = "Crear"
         Me.btnCrear.UseVisualStyleBackColor = True
         '
@@ -198,16 +198,16 @@ Partial Class frmServicios
         Me.txtPrecio.Location = New System.Drawing.Point(87, 133)
         Me.txtPrecio.MaxLength = 10
         Me.txtPrecio.Name = "txtPrecio"
-        Me.txtPrecio.Size = New System.Drawing.Size(323, 20)
-        Me.txtPrecio.TabIndex = 12
+        Me.txtPrecio.Size = New System.Drawing.Size(408, 20)
+        Me.txtPrecio.TabIndex = 5
         '
         'txtNroLote
         '
-        Me.txtNroLote.Location = New System.Drawing.Point(295, 18)
+        Me.txtNroLote.Location = New System.Drawing.Point(347, 16)
         Me.txtNroLote.MaxLength = 5
         Me.txtNroLote.Name = "txtNroLote"
-        Me.txtNroLote.Size = New System.Drawing.Size(55, 20)
-        Me.txtNroLote.TabIndex = 8
+        Me.txtNroLote.Size = New System.Drawing.Size(71, 20)
+        Me.txtNroLote.TabIndex = 1
         '
         'Label6
         '
@@ -239,7 +239,7 @@ Partial Class frmServicios
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(223, 24)
+        Me.Label1.Location = New System.Drawing.Point(266, 23)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(75, 13)
         Me.Label1.TabIndex = 0
@@ -254,7 +254,7 @@ Partial Class frmServicios
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(416, 262)
+        Me.TabPage2.Size = New System.Drawing.Size(501, 229)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Listado"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -262,7 +262,7 @@ Partial Class frmServicios
         'btnActualizar
         '
         Me.btnActualizar.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.btnActualizar.Location = New System.Drawing.Point(254, 10)
+        Me.btnActualizar.Location = New System.Drawing.Point(339, 10)
         Me.btnActualizar.Name = "btnActualizar"
         Me.btnActualizar.Size = New System.Drawing.Size(75, 23)
         Me.btnActualizar.TabIndex = 3
@@ -282,13 +282,13 @@ Partial Class frmServicios
         Me.DGListaServicios.MultiSelect = False
         Me.DGListaServicios.Name = "DGListaServicios"
         Me.DGListaServicios.ReadOnly = True
-        Me.DGListaServicios.Size = New System.Drawing.Size(404, 213)
+        Me.DGListaServicios.Size = New System.Drawing.Size(489, 180)
         Me.DGListaServicios.TabIndex = 2
         '
         'btnBuscar
         '
         Me.btnBuscar.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.btnBuscar.Location = New System.Drawing.Point(335, 10)
+        Me.btnBuscar.Location = New System.Drawing.Point(420, 10)
         Me.btnBuscar.Name = "btnBuscar"
         Me.btnBuscar.Size = New System.Drawing.Size(75, 23)
         Me.btnBuscar.TabIndex = 1
@@ -298,17 +298,17 @@ Partial Class frmServicios
         'txtBuscar
         '
         Me.txtBuscar.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtBuscar.Location = New System.Drawing.Point(6, 10)
+        Me.txtBuscar.Location = New System.Drawing.Point(6, 13)
         Me.txtBuscar.MaxLength = 5
         Me.txtBuscar.Name = "txtBuscar"
-        Me.txtBuscar.Size = New System.Drawing.Size(242, 20)
+        Me.txtBuscar.Size = New System.Drawing.Size(327, 20)
         Me.txtBuscar.TabIndex = 0
         '
         'frmServicios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(448, 312)
+        Me.ClientSize = New System.Drawing.Size(533, 279)
         Me.Controls.Add(Me.TabServicios)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False

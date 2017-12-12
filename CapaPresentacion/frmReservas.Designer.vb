@@ -62,7 +62,7 @@ Partial Class frmReservas
         Me.TabReservas.Location = New System.Drawing.Point(12, 12)
         Me.TabReservas.Name = "TabReservas"
         Me.TabReservas.SelectedIndex = 0
-        Me.TabReservas.Size = New System.Drawing.Size(370, 253)
+        Me.TabReservas.Size = New System.Drawing.Size(474, 253)
         Me.TabReservas.TabIndex = 3
         '
         'TabPage1
@@ -86,7 +86,7 @@ Partial Class frmReservas
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(362, 227)
+        Me.TabPage1.Size = New System.Drawing.Size(466, 227)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Datos"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -96,13 +96,13 @@ Partial Class frmReservas
         Me.txtPrecio.Location = New System.Drawing.Point(118, 116)
         Me.txtPrecio.MaxLength = 10
         Me.txtPrecio.Name = "txtPrecio"
-        Me.txtPrecio.Size = New System.Drawing.Size(230, 20)
+        Me.txtPrecio.Size = New System.Drawing.Size(342, 20)
         Me.txtPrecio.TabIndex = 34
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(7, 123)
+        Me.Label2.Location = New System.Drawing.Point(6, 123)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(43, 13)
         Me.Label2.TabIndex = 33
@@ -110,7 +110,7 @@ Partial Class frmReservas
         '
         'btnIdLotePublico
         '
-        Me.btnIdLotePublico.Location = New System.Drawing.Point(273, 146)
+        Me.btnIdLotePublico.Location = New System.Drawing.Point(385, 146)
         Me.btnIdLotePublico.Name = "btnIdLotePublico"
         Me.btnIdLotePublico.Size = New System.Drawing.Size(75, 23)
         Me.btnIdLotePublico.TabIndex = 32
@@ -119,7 +119,7 @@ Partial Class frmReservas
         '
         'btnIdHabitante
         '
-        Me.btnIdHabitante.Location = New System.Drawing.Point(273, 7)
+        Me.btnIdHabitante.Location = New System.Drawing.Point(385, 6)
         Me.btnIdHabitante.Name = "btnIdHabitante"
         Me.btnIdHabitante.Size = New System.Drawing.Size(75, 23)
         Me.btnIdHabitante.TabIndex = 31
@@ -130,7 +130,7 @@ Partial Class frmReservas
         '
         Me.DTFechaVencimiento.Location = New System.Drawing.Point(118, 78)
         Me.DTFechaVencimiento.Name = "DTFechaVencimiento"
-        Me.DTFechaVencimiento.Size = New System.Drawing.Size(230, 20)
+        Me.DTFechaVencimiento.Size = New System.Drawing.Size(342, 20)
         Me.DTFechaVencimiento.TabIndex = 28
         '
         'Label4
@@ -147,7 +147,7 @@ Partial Class frmReservas
         Me.DTFechaContratacion.Enabled = False
         Me.DTFechaContratacion.Location = New System.Drawing.Point(118, 42)
         Me.DTFechaContratacion.Name = "DTFechaContratacion"
-        Me.DTFechaContratacion.Size = New System.Drawing.Size(230, 20)
+        Me.DTFechaContratacion.Size = New System.Drawing.Size(342, 20)
         Me.DTFechaContratacion.TabIndex = 24
         '
         'Label5
@@ -161,7 +161,7 @@ Partial Class frmReservas
         '
         'btnBorrar
         '
-        Me.btnBorrar.Location = New System.Drawing.Point(274, 188)
+        Me.btnBorrar.Location = New System.Drawing.Point(385, 188)
         Me.btnBorrar.Name = "btnBorrar"
         Me.btnBorrar.Size = New System.Drawing.Size(75, 23)
         Me.btnBorrar.TabIndex = 22
@@ -170,7 +170,7 @@ Partial Class frmReservas
         '
         'btnEliminar
         '
-        Me.btnEliminar.Location = New System.Drawing.Point(193, 188)
+        Me.btnEliminar.Location = New System.Drawing.Point(267, 188)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(75, 23)
         Me.btnEliminar.TabIndex = 21
@@ -179,7 +179,7 @@ Partial Class frmReservas
         '
         'btnModificar
         '
-        Me.btnModificar.Location = New System.Drawing.Point(103, 188)
+        Me.btnModificar.Location = New System.Drawing.Point(144, 188)
         Me.btnModificar.Name = "btnModificar"
         Me.btnModificar.Size = New System.Drawing.Size(75, 23)
         Me.btnModificar.TabIndex = 20
@@ -200,21 +200,21 @@ Partial Class frmReservas
         Me.txtLotePublico.Location = New System.Drawing.Point(118, 149)
         Me.txtLotePublico.MaxLength = 5
         Me.txtLotePublico.Name = "txtLotePublico"
-        Me.txtLotePublico.Size = New System.Drawing.Size(150, 20)
+        Me.txtLotePublico.Size = New System.Drawing.Size(261, 20)
         Me.txtLotePublico.TabIndex = 12
         '
         'txtIdHabitante
         '
-        Me.txtIdHabitante.Location = New System.Drawing.Point(118, 10)
+        Me.txtIdHabitante.Location = New System.Drawing.Point(118, 9)
         Me.txtIdHabitante.MaxLength = 5
         Me.txtIdHabitante.Name = "txtIdHabitante"
-        Me.txtIdHabitante.Size = New System.Drawing.Size(150, 20)
+        Me.txtIdHabitante.Size = New System.Drawing.Size(261, 20)
         Me.txtIdHabitante.TabIndex = 8
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(7, 156)
+        Me.Label6.Location = New System.Drawing.Point(6, 156)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(34, 13)
         Me.Label6.TabIndex = 5
@@ -223,7 +223,7 @@ Partial Class frmReservas
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(7, 17)
+        Me.Label1.Location = New System.Drawing.Point(6, 16)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(59, 13)
         Me.Label1.TabIndex = 0
@@ -238,7 +238,7 @@ Partial Class frmReservas
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(362, 227)
+        Me.TabPage2.Size = New System.Drawing.Size(466, 227)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Listado"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -246,7 +246,7 @@ Partial Class frmReservas
         'btnActualizar
         '
         Me.btnActualizar.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.btnActualizar.Location = New System.Drawing.Point(195, 4)
+        Me.btnActualizar.Location = New System.Drawing.Point(299, 4)
         Me.btnActualizar.Name = "btnActualizar"
         Me.btnActualizar.Size = New System.Drawing.Size(75, 23)
         Me.btnActualizar.TabIndex = 3
@@ -266,13 +266,13 @@ Partial Class frmReservas
         Me.DGListaReservas.MultiSelect = False
         Me.DGListaReservas.Name = "DGListaReservas"
         Me.DGListaReservas.ReadOnly = True
-        Me.DGListaReservas.Size = New System.Drawing.Size(345, 188)
+        Me.DGListaReservas.Size = New System.Drawing.Size(449, 188)
         Me.DGListaReservas.TabIndex = 2
         '
         'btnBuscar
         '
         Me.btnBuscar.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.btnBuscar.Location = New System.Drawing.Point(276, 4)
+        Me.btnBuscar.Location = New System.Drawing.Point(380, 4)
         Me.btnBuscar.Name = "btnBuscar"
         Me.btnBuscar.Size = New System.Drawing.Size(75, 23)
         Me.btnBuscar.TabIndex = 1
@@ -285,14 +285,14 @@ Partial Class frmReservas
         Me.txtBuscar.Location = New System.Drawing.Point(6, 7)
         Me.txtBuscar.MaxLength = 5
         Me.txtBuscar.Name = "txtBuscar"
-        Me.txtBuscar.Size = New System.Drawing.Size(183, 20)
+        Me.txtBuscar.Size = New System.Drawing.Size(287, 20)
         Me.txtBuscar.TabIndex = 0
         '
         'frmReservas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(394, 283)
+        Me.ClientSize = New System.Drawing.Size(498, 283)
         Me.Controls.Add(Me.TabReservas)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False

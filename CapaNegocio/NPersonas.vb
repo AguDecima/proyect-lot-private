@@ -75,7 +75,7 @@ Public Class NPersonas
         Dim cn As New Conexion
         cn.conectar()
         Dim cadena_find As String = "SELECT id_persona AS 'Nro. de Persona' , nombre AS Nombres , apellido AS Apellidos, dni as DNI , telefono AS Telefono, " +
-            "fecha_nacimiento AS 'Fecha Nacimiento', id_lote_privado AS 'Nro de Lote' FROM personas WHERE is_habitante = 1"
+            "fecha_nacimiento AS 'Fecha Nacimiento', id_lote_privado AS 'Nro de Lote', is_propietario AS Propietario, is_habitante AS Habitante FROM personas WHERE is_habitante = 1"
 
         Dim comando As New MySqlCommand(cadena_find, cn.MySqlConexion)
         Dim dataAdapter As New MySqlDataAdapter(comando)
@@ -90,7 +90,7 @@ Public Class NPersonas
         Dim cn As New Conexion
         cn.conectar()
         Dim cadena_find As String = "SELECT id_persona AS 'Nro. de Persona' , nombre AS Nombres , apellido AS Apellidos, dni as DNI , telefono AS Telefono, " +
-            "fecha_nacimiento AS 'Fecha Nacimiento', id_lote_privado AS 'Nro de Lote' FROM personas WHERE is_propietario = 1"
+            "fecha_nacimiento AS 'Fecha Nacimiento', id_lote_privado AS 'Nro de Lote', is_propietario AS Propietario, is_habitante AS Habitante FROM personas WHERE is_propietario = 1"
 
         Dim comando As New MySqlCommand(cadena_find, cn.MySqlConexion)
         Dim dataAdapter As New MySqlDataAdapter(comando)
@@ -105,7 +105,7 @@ Public Class NPersonas
         Dim cn As New Conexion
         cn.conectar()
         Dim cadena_find As String = "SELECT id_persona AS 'Nro. de Persona' , nombre AS Nombres , apellido AS Apellidos, telefono AS Telefono, " +
-            "fecha_nacimiento AS 'Fecha Nacimiento', id_lote_privado AS 'Nro de Lote' FROM personas WHERE id_persona = @id"
+            "fecha_nacimiento AS 'Fecha Nacimiento', id_lote_privado AS 'Nro de Lote', is_propietario AS Propietario, is_habitante AS Habitante FROM personas WHERE id_persona = @id"
 
         Dim comando As New MySqlCommand(cadena_find, cn.MySqlConexion)
         comando.Parameters.AddWithValue("@id", personas.IdPersona)
@@ -121,7 +121,7 @@ Public Class NPersonas
         Dim cn As New Conexion
         cn.conectar()
         Dim cadena_find As String = "SELECT id_persona AS 'Nro. de Persona' , nombre AS Nombres , apellido AS Apellidos, dni as DNI , telefono AS Telefono,  " +
-            " fecha_nacimiento AS 'Fecha Nacimiento', id_lote_privado AS 'Nro de Lote' FROM personas WHERE is_propietario = 1 AND id_persona = @id"
+            " fecha_nacimiento AS 'Fecha Nacimiento', id_lote_privado AS 'Nro de Lote', is_propietario AS Propietario, is_habitante AS Habitante FROM personas WHERE is_propietario = 1 AND id_persona = @id"
 
         Dim comando As New MySqlCommand(cadena_find, cn.MySqlConexion)
         comando.Parameters.AddWithValue("@id", personas.IdPersona)
